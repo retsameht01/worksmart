@@ -10,10 +10,11 @@ import SwiftUI
 
 struct MainScreen: View {
     @State private var selection = 0
+    @ObservedObject var viewRouter: LoginRouter
  
     var body: some View {
         TabView(selection: $selection){
-            ProfileView()
+            ProfileView(viewRouter: viewRouter)
                 .tabItem {
                     VStack {
                         Image("first")
@@ -54,6 +55,6 @@ struct MainScreen: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainScreen()
+        MainScreen(viewRouter: LoginRouter())
     }
 }

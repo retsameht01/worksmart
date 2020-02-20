@@ -13,8 +13,6 @@ struct LoginView: View {
     @State private var password: String = ""
     
     var body: some View {
-        
-        
         NavigationView {
             VStack(alignment: .leading, spacing: 15) {
                 Spacer()
@@ -30,7 +28,7 @@ struct LoginView: View {
                     .padding()
                     .cornerRadius(20.0)
                 
-                NavigationLink(destination: MainScreen()){
+                NavigationLink(destination: MainScreen(viewRouter: LoginRouter())){
                     VStack{
                         Text("Login")
                             .font(.headline)

@@ -20,7 +20,7 @@ struct LoginScreen: View {
                 SignupForm(viewRouter: loginRouter)
             }
             else {
-                MainScreen()
+                MainScreen(viewRouter: loginRouter)
             }
         }
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66F8A1C91EFD1A5228EAFBEE /* Pods_worksmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E89CC183B72D8024F57DC20 /* Pods_worksmart.framework */; };
 		E3394E4823FDDE890071DD9E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E4723FDDE890071DD9E /* LoginScreen.swift */; };
 		E3394E4A23FE00480071DD9E /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E4923FE00480071DD9E /* LoginForm.swift */; };
 		E3394E4C23FE01D40071DD9E /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E4B23FE01D40071DD9E /* LoginRouter.swift */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E89CC183B72D8024F57DC20 /* Pods_worksmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_worksmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29CEB2C822DD62B1264C12CC /* Pods-worksmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worksmart.debug.xcconfig"; path = "Target Support Files/Pods-worksmart/Pods-worksmart.debug.xcconfig"; sourceTree = "<group>"; };
 		E3394E4723FDDE890071DD9E /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E3394E4923FE00480071DD9E /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		E3394E4B23FE01D40071DD9E /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		E35B4EB123FCD69B00BE1894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35B4EB323FCD69B00BE1894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E35B4EB923FCD7CF00BE1894 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E9CA5EA237B5E978E48EE95D /* Pods-worksmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worksmart.release.xcconfig"; path = "Target Support Files/Pods-worksmart/Pods-worksmart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +57,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F8A1C91EFD1A5228EAFBEE /* Pods_worksmart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0183E9F595E11C057CDE0768 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29CEB2C822DD62B1264C12CC /* Pods-worksmart.debug.xcconfig */,
+				E9CA5EA237B5E978E48EE95D /* Pods-worksmart.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E3394E4F23FE08A30071DD9E /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +104,8 @@
 			children = (
 				E35B4EA123FCD69900BE1894 /* worksmart */,
 				E35B4EA023FCD69900BE1894 /* Products */,
+				0183E9F595E11C057CDE0768 /* Pods */,
+				F13812ECC4E1941F8C25D144 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +141,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F13812ECC4E1941F8C25D144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E89CC183B72D8024F57DC20 /* Pods_worksmart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E35B4EB623FCD69B00BE1894 /* Build configuration list for PBXNativeTarget "worksmart" */;
 			buildPhases = (
+				4901CB4641CD829B96C97292 /* [CP] Check Pods Manifest.lock */,
 				E35B4E9B23FCD69900BE1894 /* Sources */,
 				E35B4E9C23FCD69900BE1894 /* Frameworks */,
 				E35B4E9D23FCD69900BE1894 /* Resources */,
+				65E808DEB819774E8B895B6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +216,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4901CB4641CD829B96C97292 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-worksmart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65E808DEB819774E8B895B6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-worksmart/Pods-worksmart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-worksmart/Pods-worksmart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-worksmart/Pods-worksmart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E35B4E9B23FCD69900BE1894 /* Sources */ = {
@@ -342,6 +411,7 @@
 		};
 		E35B4EB723FCD69B00BE1894 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29CEB2C822DD62B1264C12CC /* Pods-worksmart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,6 +432,7 @@
 		};
 		E35B4EB823FCD69B00BE1894 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9CA5EA237B5E978E48EE95D /* Pods-worksmart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
