@@ -11,10 +11,15 @@
 		E3394E4A23FE00480071DD9E /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E4923FE00480071DD9E /* LoginForm.swift */; };
 		E3394E4C23FE01D40071DD9E /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E4B23FE01D40071DD9E /* LoginRouter.swift */; };
 		E3394E4E23FE05380071DD9E /* SignupForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E4D23FE05380071DD9E /* SignupForm.swift */; };
+		E3394E5123FE08CB0071DD9E /* LabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E5023FE08CB0071DD9E /* LabelTextField.swift */; };
+		E3394E5423FE277B0071DD9E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E5323FE277B0071DD9E /* ProfileView.swift */; };
+		E3394E5623FE279B0071DD9E /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E5523FE279B0071DD9E /* ScheduleView.swift */; };
+		E3394E5823FE27CC0071DD9E /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E5723FE27CC0071DD9E /* ReportsView.swift */; };
+		E3394E5A23FE27F20071DD9E /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E5923FE27F20071DD9E /* NotificationsView.swift */; };
 		E35B4EA323FCD69900BE1894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA223FCD69900BE1894 /* AppDelegate.swift */; };
 		E35B4EA523FCD69900BE1894 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA423FCD69900BE1894 /* SceneDelegate.swift */; };
 		E35B4EA823FCD69900BE1894 /* worksmart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA623FCD69900BE1894 /* worksmart.xcdatamodeld */; };
-		E35B4EAA23FCD69900BE1894 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA923FCD69900BE1894 /* ContentView.swift */; };
+		E35B4EAA23FCD69900BE1894 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA923FCD69900BE1894 /* MainScreen.swift */; };
 		E35B4EAC23FCD69B00BE1894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35B4EAB23FCD69B00BE1894 /* Assets.xcassets */; };
 		E35B4EAF23FCD69B00BE1894 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35B4EAE23FCD69B00BE1894 /* Preview Assets.xcassets */; };
 		E35B4EB223FCD69B00BE1894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35B4EB023FCD69B00BE1894 /* LaunchScreen.storyboard */; };
@@ -26,11 +31,16 @@
 		E3394E4923FE00480071DD9E /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		E3394E4B23FE01D40071DD9E /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		E3394E4D23FE05380071DD9E /* SignupForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupForm.swift; sourceTree = "<group>"; };
+		E3394E5023FE08CB0071DD9E /* LabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextField.swift; sourceTree = "<group>"; };
+		E3394E5323FE277B0071DD9E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E3394E5523FE279B0071DD9E /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		E3394E5723FE27CC0071DD9E /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		E3394E5923FE27F20071DD9E /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		E35B4E9F23FCD69900BE1894 /* worksmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worksmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35B4EA223FCD69900BE1894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35B4EA423FCD69900BE1894 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E35B4EA723FCD69900BE1894 /* worksmart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = worksmart.xcdatamodel; sourceTree = "<group>"; };
-		E35B4EA923FCD69900BE1894 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E35B4EA923FCD69900BE1894 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		E35B4EAB23FCD69B00BE1894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E35B4EAE23FCD69B00BE1894 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E35B4EB123FCD69B00BE1894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3394E4F23FE08A30071DD9E /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E3394E4D23FE05380071DD9E /* SignupForm.swift */,
+				E3394E4923FE00480071DD9E /* LoginForm.swift */,
+				E3394E5023FE08CB0071DD9E /* LabelTextField.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		E3394E5223FE248B0071DD9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E35B4EB923FCD7CF00BE1894 /* LoginView.swift */,
+				E35B4EA923FCD69900BE1894 /* MainScreen.swift */,
+				E3394E4B23FE01D40071DD9E /* LoginRouter.swift */,
+				E3394E4723FDDE890071DD9E /* LoginScreen.swift */,
+				E3394E5323FE277B0071DD9E /* ProfileView.swift */,
+				E3394E5523FE279B0071DD9E /* ScheduleView.swift */,
+				E3394E5723FE27CC0071DD9E /* ReportsView.swift */,
+				E3394E5923FE27F20071DD9E /* NotificationsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E35B4E9623FCD69900BE1894 = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +103,15 @@
 		E35B4EA123FCD69900BE1894 /* worksmart */ = {
 			isa = PBXGroup;
 			children = (
+				E3394E5223FE248B0071DD9E /* Views */,
+				E3394E4F23FE08A30071DD9E /* UIComponents */,
 				E35B4EA223FCD69900BE1894 /* AppDelegate.swift */,
 				E35B4EA423FCD69900BE1894 /* SceneDelegate.swift */,
-				E35B4EA923FCD69900BE1894 /* ContentView.swift */,
 				E35B4EAB23FCD69B00BE1894 /* Assets.xcassets */,
 				E35B4EB023FCD69B00BE1894 /* LaunchScreen.storyboard */,
 				E35B4EB323FCD69B00BE1894 /* Info.plist */,
 				E35B4EA623FCD69900BE1894 /* worksmart.xcdatamodeld */,
 				E35B4EAD23FCD69B00BE1894 /* Preview Content */,
-				E35B4EB923FCD7CF00BE1894 /* LoginView.swift */,
-				E3394E4723FDDE890071DD9E /* LoginScreen.swift */,
-				E3394E4923FE00480071DD9E /* LoginForm.swift */,
-				E3394E4B23FE01D40071DD9E /* LoginRouter.swift */,
-				E3394E4D23FE05380071DD9E /* SignupForm.swift */,
 			);
 			path = worksmart;
 			sourceTree = "<group>";
@@ -167,12 +198,17 @@
 				E35B4EA823FCD69900BE1894 /* worksmart.xcdatamodeld in Sources */,
 				E35B4EA323FCD69900BE1894 /* AppDelegate.swift in Sources */,
 				E3394E4E23FE05380071DD9E /* SignupForm.swift in Sources */,
-				E35B4EAA23FCD69900BE1894 /* ContentView.swift in Sources */,
+				E35B4EAA23FCD69900BE1894 /* MainScreen.swift in Sources */,
+				E3394E5423FE277B0071DD9E /* ProfileView.swift in Sources */,
+				E3394E5623FE279B0071DD9E /* ScheduleView.swift in Sources */,
+				E3394E5123FE08CB0071DD9E /* LabelTextField.swift in Sources */,
+				E3394E5823FE27CC0071DD9E /* ReportsView.swift in Sources */,
 				E35B4EBA23FCD7CF00BE1894 /* LoginView.swift in Sources */,
 				E3394E4A23FE00480071DD9E /* LoginForm.swift in Sources */,
 				E35B4EA523FCD69900BE1894 /* SceneDelegate.swift in Sources */,
 				E3394E4C23FE01D40071DD9E /* LoginRouter.swift in Sources */,
 				E3394E4823FDDE890071DD9E /* LoginScreen.swift in Sources */,
+				E3394E5A23FE27F20071DD9E /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

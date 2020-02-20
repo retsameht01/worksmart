@@ -32,15 +32,15 @@ struct LoginForm: View {
                 TextField("Email", text: self.$email)
                     .padding()
                     .background(Color.themeTextField)
-                    .cornerRadius(20.0)
+                    .cornerRadius(10.0)
                     .shadow(radius: 10.0, x: 20, y: 10)
                 
                 SecureField("Password", text: self.$password)
                     .padding()
                     .background(Color.themeTextField)
-                    .cornerRadius(20.0)
+                    .cornerRadius(10.0)
                     .shadow(radius: 10.0, x: 20, y: 10)
-            }.padding([.leading, .trailing], 27.5)
+            }.padding(.horizontal, 27.5)
             
             Button(action: {
                 self.viewRouter.currentPage = "home"

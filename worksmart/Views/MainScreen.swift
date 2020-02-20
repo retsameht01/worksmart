@@ -8,35 +8,52 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainScreen: View {
     @State private var selection = 0
  
     var body: some View {
         TabView(selection: $selection){
-            Text("First View")
-                .font(.title)
+            ProfileView()
                 .tabItem {
                     VStack {
                         Image("first")
-                        Text("First")
+                        Text("Profile")
                     }
                 }
                 .tag(0)
-            Text("Second View")
-                .font(.title)
+            
+            ScheduleView()
                 .tabItem {
                     VStack {
                         Image("second")
-                        Text("Second")
+                        Text("Schedule")
                     }
                 }
                 .tag(1)
+            
+            ReportsView()
+            .tabItem {
+                VStack {
+                    Image("first")
+                    Text("Reports")
+                }
+            }
+            .tag(2)
+            
+            NotificationsView()
+            .tabItem {
+                VStack {
+                    Image("second")
+                    Text("Notifications")
+                }
+            }
+            .tag(3)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainScreen()
     }
 }

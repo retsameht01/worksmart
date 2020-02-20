@@ -30,7 +30,7 @@ struct LoginView: View {
                     .padding()
                     .cornerRadius(20.0)
                 
-                NavigationLink(destination: ContentView()){
+                NavigationLink(destination: MainScreen()){
                     VStack{
                         Text("Login")
                             .font(.headline)
