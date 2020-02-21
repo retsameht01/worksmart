@@ -11,7 +11,7 @@ import Combine
 import SwiftUI
 
 class LoginRouter: ObservableObject {
-    let objectWillChange = PassthroughSubject<LoginRouter,Never>()
+    let objectWillChange = PassthroughSubject<LoginRouter, Never>()
     var currentPage: String = "login" {
         didSet {
             objectWillChange.send(self)

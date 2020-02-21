@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @ObservedObject var viewRouter: LoginRouter
+    @ObservedObject var profileVM: ProfileVM
     
     var body: some View {
         VStack{
@@ -26,12 +27,14 @@ struct ProfileView: View {
             }
             Text("Profile")
                 .font(.title)
-        }
+            
+            Text(profileVM.weatherInfo)
+        }.onAppear(perform: {self.profileVM.getWeather(city: "Atlanta")})
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(viewRouter: LoginRouter())
+        ProfileView(viewRouter: LoginRouter(), profileVM: ProfileVM())
     }
 }

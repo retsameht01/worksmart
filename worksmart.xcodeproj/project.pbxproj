@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,10 @@
 		E35B4EAF23FCD69B00BE1894 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35B4EAE23FCD69B00BE1894 /* Preview Assets.xcassets */; };
 		E35B4EB223FCD69B00BE1894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35B4EB023FCD69B00BE1894 /* LaunchScreen.storyboard */; };
 		E35B4EBA23FCD7CF00BE1894 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EB923FCD7CF00BE1894 /* LoginView.swift */; };
+		E3D0FC7C23FE317600533FDA /* GPOSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC7B23FE317600533FDA /* GPOSApi.swift */; };
+		E3D0FC7E23FF463800533FDA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC7D23FF463800533FDA /* UserProfile.swift */; };
+		E3D0FC8023FF481B00533FDA /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC7F23FF481B00533FDA /* ApiError.swift */; };
+		E3D0FC8323FF525600533FDA /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC8223FF525600533FDA /* ProfileVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		E35B4EB123FCD69B00BE1894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35B4EB323FCD69B00BE1894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E35B4EB923FCD7CF00BE1894 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E3D0FC7B23FE317600533FDA /* GPOSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPOSApi.swift; sourceTree = "<group>"; };
+		E3D0FC7D23FF463800533FDA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		E3D0FC7F23FF481B00533FDA /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		E3D0FC8223FF525600533FDA /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
 		E9CA5EA237B5E978E48EE95D /* Pods-worksmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worksmart.release.xcconfig"; path = "Target Support Files/Pods-worksmart/Pods-worksmart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +78,6 @@
 				29CEB2C822DD62B1264C12CC /* Pods-worksmart.debug.xcconfig */,
 				E9CA5EA237B5E978E48EE95D /* Pods-worksmart.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +127,9 @@
 		E35B4EA123FCD69900BE1894 /* worksmart */ = {
 			isa = PBXGroup;
 			children = (
+				E3D0FC8123FF523E00533FDA /* ViewModel */,
+				E3D0FC7A23FE30EA00533FDA /* data */,
+				E3D0FC7923FE309E00533FDA /* Network */,
 				E3394E5223FE248B0071DD9E /* Views */,
 				E3394E4F23FE08A30071DD9E /* UIComponents */,
 				E35B4EA223FCD69900BE1894 /* AppDelegate.swift */,
@@ -139,6 +149,31 @@
 				E35B4EAE23FCD69B00BE1894 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3D0FC7923FE309E00533FDA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E3D0FC7B23FE317600533FDA /* GPOSApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E3D0FC7A23FE30EA00533FDA /* data */ = {
+			isa = PBXGroup;
+			children = (
+				E3D0FC7D23FF463800533FDA /* UserProfile.swift */,
+				E3D0FC7F23FF481B00533FDA /* ApiError.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		E3D0FC8123FF523E00533FDA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3D0FC8223FF525600533FDA /* ProfileVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F13812ECC4E1941F8C25D144 /* Frameworks */ = {
@@ -265,16 +300,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E35B4EA823FCD69900BE1894 /* worksmart.xcdatamodeld in Sources */,
+				E3D0FC8023FF481B00533FDA /* ApiError.swift in Sources */,
 				E35B4EA323FCD69900BE1894 /* AppDelegate.swift in Sources */,
 				E3394E4E23FE05380071DD9E /* SignupForm.swift in Sources */,
+				E3D0FC8323FF525600533FDA /* ProfileVM.swift in Sources */,
 				E35B4EAA23FCD69900BE1894 /* MainScreen.swift in Sources */,
 				E3394E5423FE277B0071DD9E /* ProfileView.swift in Sources */,
 				E3394E5623FE279B0071DD9E /* ScheduleView.swift in Sources */,
+				E3D0FC7C23FE317600533FDA /* GPOSApi.swift in Sources */,
 				E3394E5123FE08CB0071DD9E /* LabelTextField.swift in Sources */,
 				E3394E5823FE27CC0071DD9E /* ReportsView.swift in Sources */,
 				E35B4EBA23FCD7CF00BE1894 /* LoginView.swift in Sources */,
 				E3394E4A23FE00480071DD9E /* LoginForm.swift in Sources */,
 				E35B4EA523FCD69900BE1894 /* SceneDelegate.swift in Sources */,
+				E3D0FC7E23FF463800533FDA /* UserProfile.swift in Sources */,
 				E3394E4C23FE01D40071DD9E /* LoginRouter.swift in Sources */,
 				E3394E4823FDDE890071DD9E /* LoginScreen.swift in Sources */,
 				E3394E5A23FE27F20071DD9E /* NotificationsView.swift in Sources */,

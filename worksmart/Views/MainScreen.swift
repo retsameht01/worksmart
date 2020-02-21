@@ -11,10 +11,12 @@ import SwiftUI
 struct MainScreen: View {
     @State private var selection = 0
     @ObservedObject var viewRouter: LoginRouter
+    //TODO refactor this to be injected. view should not care about instantiating Vm
+    @ObservedObject var viewModel: ProfileVM = ProfileVM()
  
     var body: some View {
         TabView(selection: $selection){
-            ProfileView(viewRouter: viewRouter)
+            ProfileView(viewRouter: viewRouter, profileVM: viewModel)
                 .tabItem {
                     VStack {
                         Image("first")
