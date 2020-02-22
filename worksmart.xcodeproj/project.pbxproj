@@ -29,6 +29,10 @@
 		E3D0FC7E23FF463800533FDA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC7D23FF463800533FDA /* UserProfile.swift */; };
 		E3D0FC8023FF481B00533FDA /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC7F23FF481B00533FDA /* ApiError.swift */; };
 		E3D0FC8323FF525600533FDA /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC8223FF525600533FDA /* ProfileVM.swift */; };
+		E3D0FC852401509000533FDA /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC842401509000533FDA /* WeatherData.swift */; };
+		E3D0FC872401C0E900533FDA /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC862401C0E900533FDA /* RowView.swift */; };
+		E3D0FC892401C84700533FDA /* AppointmentsDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC882401C84700533FDA /* AppointmentsDialog.swift */; };
+		E3D0FC8B2401CA0000533FDA /* RevenueDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC8A2401CA0000533FDA /* RevenueDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,10 @@
 		E3D0FC7D23FF463800533FDA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		E3D0FC7F23FF481B00533FDA /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		E3D0FC8223FF525600533FDA /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
+		E3D0FC842401509000533FDA /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		E3D0FC862401C0E900533FDA /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		E3D0FC882401C84700533FDA /* AppointmentsDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsDialog.swift; sourceTree = "<group>"; };
+		E3D0FC8A2401CA0000533FDA /* RevenueDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueDialog.swift; sourceTree = "<group>"; };
 		E9CA5EA237B5E978E48EE95D /* Pods-worksmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worksmart.release.xcconfig"; path = "Target Support Files/Pods-worksmart/Pods-worksmart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +110,8 @@
 				E3394E5523FE279B0071DD9E /* ScheduleView.swift */,
 				E3394E5723FE27CC0071DD9E /* ReportsView.swift */,
 				E3394E5923FE27F20071DD9E /* NotificationsView.swift */,
+				E3D0FC882401C84700533FDA /* AppointmentsDialog.swift */,
+				E3D0FC8A2401CA0000533FDA /* RevenueDialog.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +174,7 @@
 			children = (
 				E3D0FC7D23FF463800533FDA /* UserProfile.swift */,
 				E3D0FC7F23FF481B00533FDA /* ApiError.swift */,
+				E3D0FC842401509000533FDA /* WeatherData.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				E3D0FC8223FF525600533FDA /* ProfileVM.swift */,
+				E3D0FC862401C0E900533FDA /* RowView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -299,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D0FC852401509000533FDA /* WeatherData.swift in Sources */,
 				E35B4EA823FCD69900BE1894 /* worksmart.xcdatamodeld in Sources */,
 				E3D0FC8023FF481B00533FDA /* ApiError.swift in Sources */,
 				E35B4EA323FCD69900BE1894 /* AppDelegate.swift in Sources */,
@@ -309,9 +322,12 @@
 				E3394E5623FE279B0071DD9E /* ScheduleView.swift in Sources */,
 				E3D0FC7C23FE317600533FDA /* GPOSApi.swift in Sources */,
 				E3394E5123FE08CB0071DD9E /* LabelTextField.swift in Sources */,
+				E3D0FC872401C0E900533FDA /* RowView.swift in Sources */,
 				E3394E5823FE27CC0071DD9E /* ReportsView.swift in Sources */,
+				E3D0FC892401C84700533FDA /* AppointmentsDialog.swift in Sources */,
 				E35B4EBA23FCD7CF00BE1894 /* LoginView.swift in Sources */,
 				E3394E4A23FE00480071DD9E /* LoginForm.swift in Sources */,
+				E3D0FC8B2401CA0000533FDA /* RevenueDialog.swift in Sources */,
 				E35B4EA523FCD69900BE1894 /* SceneDelegate.swift in Sources */,
 				E3D0FC7E23FF463800533FDA /* UserProfile.swift in Sources */,
 				E3394E4C23FE01D40071DD9E /* LoginRouter.swift in Sources */,

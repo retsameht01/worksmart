@@ -11,25 +11,82 @@ import SwiftUI
 struct ProfileView: View {
     @ObservedObject var viewRouter: LoginRouter
     @ObservedObject var profileVM: ProfileVM
+    @State private var showAppointments = false
+    @State private var showRevenue = false
+    @State private var showCustomerServed = false
     
     var body: some View {
-        VStack{
+        VStack(alignment:.leading){
             HStack{
+                Spacer()
                 Button(action: {
                     self.viewRouter.currentPage = "login"
                 }){
                     Text("Logout")
                         .padding(.horizontal, 20)
-                    .background(Color.green)
-                    .foregroundColor(.white)
+                        .foregroundColor(.blue)
                 }
-                Spacer()
             }
-            Text("Profile")
-                .font(.title)
             
-            Text(profileVM.weatherInfo)
+            Text(getTimeStamp())
+                .font(.subheadline)
+                .italic()
+                .foregroundColor(.black)
+            
+            Text("Lux Nail")
+                .font(.title)
+                .foregroundColor(.red)
+                .padding(.bottom, 10)
+            
+            Text("Christie Nguyen")
+                .font(.largeTitle)
+                .foregroundColor(.blue)
+                .padding(.bottom, 20)
+            
+            HStack{
+                RowView(rowLabel: "Revenue", rowData: "$24.99")
+                Button(action:{
+                    self.showRevenue = true
+                }) {
+                    Text("view")
+                }.sheet(isPresented: self.$showRevenue) {
+                  RevenueDialog()
+                }
+            }.padding(.bottom, 20)
+            
+            HStack{
+                RowView(rowLabel: "Customers Served", rowData: "3")
+                Button(action:{
+                    self.showCustomerServed = true
+                }) {
+                    Text("view")
+                }.sheet(isPresented: self.$showCustomerServed) {
+                  AppointmentsDialog()
+                }
+            }.padding(.bottom, 20)
+            
+            HStack{
+                RowView(rowLabel: "Appointments:", rowData: "3")
+                Button(action:{
+                    self.showAppointments = true
+                }) {
+                    Text("view")
+                }.sheet(isPresented: self.$showAppointments) {
+                  AppointmentsDialog()
+                }
+            }
+            
+            //Text(profileVM.weatherInfo)
+            Spacer()
+            Spacer()
+            Spacer()
         }.onAppear(perform: {self.profileVM.getWeather(city: "Atlanta")})
+        .padding(20)
+    }
+    
+    func getTimeStamp() -> String{
+        let timestamp = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: .medium, timeStyle: .short)
+       return timestamp
     }
 }
 
@@ -38,3 +95,17 @@ struct ProfileView_Previews: PreviewProvider {
         ProfileView(viewRouter: LoginRouter(), profileVM: ProfileVM())
     }
 }
+
+
+
+/*
+ to show alert
+ 
+ .alert(isPresented: $showAppointments) {
+ Alert(title: Text("Important message"), message: Text("Wear sunscreen"), dismissButton: .default(Text("Got it!")))
+ 
+ To show Modal
+ .sheet(isPresented: self.$show_modal) {
+  ModalView()
+ }
+ */

@@ -24,7 +24,8 @@ protocol GposApi {
 
 class GposService {
     private let API_KEY = "eb05f6219511c8637d3d7c10274031ed"
-    func getWeather(city: String, completion: @escaping (_ success: Bool, _ json:String) -> Void) {
+    func getWeather(city: String, completion: @escaping (_ success: Bool,
+        _ dictionary:[String: Any]?) -> Void) {
         let url = ApiParam.WEATHER_API_URL + ApiParam.CITY_KEY + "=\(city)&" + ApiParam.APP_ID_KEY + "=\(API_KEY)"
         
         AF.request(url, method: .get)
@@ -33,10 +34,14 @@ class GposService {
                 if let jsonData = response.data {
                     let json = JSON(jsonData)
                     print("json \(json)")
-                    completion(true, json.rawString()!)
+                    print("weather \(json["weather"])")
+                    
+                    let weatherJson = json["weather"]
+                    print("weather \(weatherJson["description"])")
+                    completion(true, weatherJson.dictionary)
                     
                 } else {
-                    completion(true, "failed to retrieve")
+                    completion(true, nil)
                 }
         }
     }
