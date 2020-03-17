@@ -45,16 +45,12 @@ class EventsCalendarView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sectionHeaders[section] //getNiceDateString(dateStr: eventDates[section])
+        return sectionHeaders[section]
     }
     
-    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int)
-    {
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
         let headerView = view as! UITableViewHeaderFooterView
         headerView.backgroundColor = .green
-
-        // Do whatever with the header view... e.g.
-        // headerView.textLabel?.textColor = UIColor.white
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -65,20 +61,6 @@ class EventsCalendarView: UITableViewController {
         if let sectionListData = sectionData[sectionHeaders[section]] {
             return sectionListData.count
         }
-        
-        /*if let events = events {
-            let section = eventDates[section]
-            var count = 0
-            for event in events {
-                    if let date = event.occurrenceDate {
-                        if (date.description == section) {
-                            count = count + 1
-                        }
-                }
-            }
-            //print("There are \(count) for \(section)")
-            return count
-        }*/
         return 1
     }
 
@@ -93,7 +75,6 @@ class EventsCalendarView: UITableViewController {
             cell.textLabel!.text = "Default"
         }
         
-         //events?[(indexPath as NSIndexPath).section].title.description //"\(indexPath.row)"
         return cell
     }
     
@@ -148,11 +129,9 @@ class EventsCalendarView: UITableViewController {
         DispatchQueue.main.async{
             self.tableView.reloadData()
         }
-        //tableView.reloadData()
-        
     }
     
-    func getNiceDateString(dateStr: String) ->String {
+    func getNiceDateString(dateStr: String) -> String {
         let inputFormat = DateFormatter()
         inputFormat.dateFormat = "yyyy-MM-dd hh:mm:ss Z"
         let date = inputFormat.date(from: dateStr)
@@ -165,6 +144,5 @@ class EventsCalendarView: UITableViewController {
         } else {
             return dateStr
         }
-        //return outputFormat.string(for: date)
     }
 }

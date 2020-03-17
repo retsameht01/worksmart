@@ -36,3 +36,19 @@ VStack(alignment:.leading) {
 
 .background(CustomColor.pastelLightBlue)
 */
+
+//Loop through the events
+
+      /*if let events = events {
+          let section = eventDates[section]
+          var count = 0
+          for event in events {
+                  if let date = event.occurrenceDate {
+                      if (date.description == section) {
+                          count = count + 1
+                      }
+              }
+          }
+          //print("There are \(count) for \(section)")
+          return count
+      }*/

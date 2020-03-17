@@ -11,12 +11,10 @@ import SwiftUI
 struct ScheduleView: View {
     var body: some View {
         VStack{
-            ScannerViewPresentation()
-            //ViewEventViewControllerPresentation()
-            /*
-          Text("Schedule")
-            .font(.title)*/
-        }
+            ViewEventViewControllerPresentation()
+        }.background(
+        LinearGradient(gradient: Gradient(colors: [CustomColor.cleanBlue, CustomColor.pastelCoral]), startPoint: .top, endPoint: .bottom)
+        .edgesIgnoringSafeArea(.all))
         
     }
 }
