@@ -33,14 +33,14 @@ struct ProfileView: View {
                 .italic()
                 .foregroundColor(.black)
             
-            Text("Lux Nail")
+            Text("Fancy Nail")
                 .font(.title)
-                .foregroundColor(.red)
+                .foregroundColor(CustomColor.niceYellow)
                 .padding(.bottom, 10)
             
             Text("Christie Nguyen")
                 .font(.largeTitle)
-                .foregroundColor(.blue)
+                .foregroundColor(.white)
                 .padding(.bottom, 20)
             
             HStack{
@@ -82,6 +82,9 @@ struct ProfileView: View {
             Spacer()
         }.onAppear(perform: {self.profileVM.getWeather(city: "Atlanta")})
         .padding(20)
+        .background(
+        LinearGradient(gradient: Gradient(colors: [CustomColor.cleanBlue, CustomColor.pastelCoral]), startPoint: .top, endPoint: .bottom)
+        .edgesIgnoringSafeArea(.all))
     }
     
     func getTimeStamp() -> String{

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66F8A1C91EFD1A5228EAFBEE /* Pods_worksmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E89CC183B72D8024F57DC20 /* Pods_worksmart.framework */; };
+		D2A3F8E6BA002023C0B83572 /* Pods_worksmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A1F3E1031ADA55C3B1385 /* Pods_worksmart.framework */; };
 		E3394E4823FDDE890071DD9E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E4723FDDE890071DD9E /* LoginScreen.swift */; };
 		E3394E4A23FE00480071DD9E /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E4923FE00480071DD9E /* LoginForm.swift */; };
 		E3394E4C23FE01D40071DD9E /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E4B23FE01D40071DD9E /* LoginRouter.swift */; };
@@ -17,6 +17,16 @@
 		E3394E5623FE279B0071DD9E /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E5523FE279B0071DD9E /* ScheduleView.swift */; };
 		E3394E5823FE27CC0071DD9E /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E5723FE27CC0071DD9E /* ReportsView.swift */; };
 		E3394E5A23FE27F20071DD9E /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E5923FE27F20071DD9E /* NotificationsView.swift */; };
+		E3584B0F2413C80E00DFCBD2 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B0E2413C80E00DFCBD2 /* ScannerViewController.swift */; };
+		E3584B112413C90800DFCBD2 /* ScannerViewPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B102413C90800DFCBD2 /* ScannerViewPresentation.swift */; };
+		E3584B132419CD2700DFCBD2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B122419CD2600DFCBD2 /* BlurView.swift */; };
+		E3584B15241C178900DFCBD2 /* ProfileViewv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B14241C178900DFCBD2 /* ProfileViewv2.swift */; };
+		E3584B17241C1B6500DFCBD2 /* ListItemWithRoundCornerBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B16241C1B6500DFCBD2 /* ListItemWithRoundCornerBG.swift */; };
+		E3584B19241C22CF00DFCBD2 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B18241C22CF00DFCBD2 /* CustomColor.swift */; };
+		E3584B1B241E987D00DFCBD2 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B1A241E987D00DFCBD2 /* SectionView.swift */; };
+		E3584B1D241E9D5B00DFCBD2 /* AppointmentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B1C241E9D5B00DFCBD2 /* AppointmentRow.swift */; };
+		E3584B1F242058FF00DFCBD2 /* ScratchFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B1E242058FF00DFCBD2 /* ScratchFile.swift */; };
+		E3584B2124205ADE00DFCBD2 /* TapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B2024205ADE00DFCBD2 /* TapItem.swift */; };
 		E35B4EA323FCD69900BE1894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA223FCD69900BE1894 /* AppDelegate.swift */; };
 		E35B4EA523FCD69900BE1894 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA423FCD69900BE1894 /* SceneDelegate.swift */; };
 		E35B4EA823FCD69900BE1894 /* worksmart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA623FCD69900BE1894 /* worksmart.xcdatamodeld */; };
@@ -25,6 +35,10 @@
 		E35B4EAF23FCD69B00BE1894 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35B4EAE23FCD69B00BE1894 /* Preview Assets.xcassets */; };
 		E35B4EB223FCD69B00BE1894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35B4EB023FCD69B00BE1894 /* LaunchScreen.storyboard */; };
 		E35B4EBA23FCD7CF00BE1894 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EB923FCD7CF00BE1894 /* LoginView.swift */; };
+		E3AAD9FB2401DCBB00EB187A /* EventsCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AAD9FA2401DCBB00EB187A /* EventsCalendarManager.swift */; };
+		E3AAD9FE2401DFF600EB187A /* EventsCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AAD9FD2401DFF600EB187A /* EventsCalendarView.swift */; };
+		E3AADA002401E26F00EB187A /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AAD9FF2401E26F00EB187A /* AddEventViewController.swift */; };
+		E3AADA0224036C6600EB187A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3AADA0124036C6600EB187A /* MainStoryboard.storyboard */; };
 		E3D0FC7C23FE317600533FDA /* GPOSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC7B23FE317600533FDA /* GPOSApi.swift */; };
 		E3D0FC7E23FF463800533FDA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC7D23FF463800533FDA /* UserProfile.swift */; };
 		E3D0FC8023FF481B00533FDA /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC7F23FF481B00533FDA /* ApiError.swift */; };
@@ -33,11 +47,31 @@
 		E3D0FC872401C0E900533FDA /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC862401C0E900533FDA /* RowView.swift */; };
 		E3D0FC892401C84700533FDA /* AppointmentsDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC882401C84700533FDA /* AppointmentsDialog.swift */; };
 		E3D0FC8B2401CA0000533FDA /* RevenueDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC8A2401CA0000533FDA /* RevenueDialog.swift */; };
+		E3F41406240A03090058D60B /* ViewEventViewControllerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F41405240A03090058D60B /* ViewEventViewControllerPresentation.swift */; };
+		E3F4141B2411E6470058D60B /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3F414172411E6470058D60B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3F414242411E9420058D60B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F414202411E8E90058D60B /* Alamofire.framework */; };
+		E3F414252411E9420058D60B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3F414202411E8E90058D60B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E3F414112411E58F0058D60B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E3F4141B2411E6470058D60B /* SwiftyJSON.framework in Embed Frameworks */,
+				E3F414252411E9420058D60B /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1E89CC183B72D8024F57DC20 /* Pods_worksmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_worksmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29CEB2C822DD62B1264C12CC /* Pods-worksmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worksmart.debug.xcconfig"; path = "Target Support Files/Pods-worksmart/Pods-worksmart.debug.xcconfig"; sourceTree = "<group>"; };
+		771A1F3E1031ADA55C3B1385 /* Pods_worksmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_worksmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82DB0497FF5835795DAE6D9 /* Pods-worksmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worksmart.release.xcconfig"; path = "Target Support Files/Pods-worksmart/Pods-worksmart.release.xcconfig"; sourceTree = "<group>"; };
+		BE700F49B178A61ADCE93E32 /* Pods-worksmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worksmart.debug.xcconfig"; path = "Target Support Files/Pods-worksmart/Pods-worksmart.debug.xcconfig"; sourceTree = "<group>"; };
 		E3394E4723FDDE890071DD9E /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E3394E4923FE00480071DD9E /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		E3394E4B23FE01D40071DD9E /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -47,6 +81,16 @@
 		E3394E5523FE279B0071DD9E /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		E3394E5723FE27CC0071DD9E /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
 		E3394E5923FE27F20071DD9E /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		E3584B0E2413C80E00DFCBD2 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		E3584B102413C90800DFCBD2 /* ScannerViewPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewPresentation.swift; sourceTree = "<group>"; };
+		E3584B122419CD2600DFCBD2 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		E3584B14241C178900DFCBD2 /* ProfileViewv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewv2.swift; sourceTree = "<group>"; };
+		E3584B16241C1B6500DFCBD2 /* ListItemWithRoundCornerBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemWithRoundCornerBG.swift; sourceTree = "<group>"; };
+		E3584B18241C22CF00DFCBD2 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		E3584B1A241E987D00DFCBD2 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		E3584B1C241E9D5B00DFCBD2 /* AppointmentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentRow.swift; sourceTree = "<group>"; };
+		E3584B1E242058FF00DFCBD2 /* ScratchFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchFile.swift; sourceTree = "<group>"; };
+		E3584B2024205ADE00DFCBD2 /* TapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapItem.swift; sourceTree = "<group>"; };
 		E35B4E9F23FCD69900BE1894 /* worksmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worksmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35B4EA223FCD69900BE1894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35B4EA423FCD69900BE1894 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +101,10 @@
 		E35B4EB123FCD69B00BE1894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35B4EB323FCD69B00BE1894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E35B4EB923FCD7CF00BE1894 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E3AAD9FA2401DCBB00EB187A /* EventsCalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCalendarManager.swift; sourceTree = "<group>"; };
+		E3AAD9FD2401DFF600EB187A /* EventsCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCalendarView.swift; sourceTree = "<group>"; };
+		E3AAD9FF2401E26F00EB187A /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		E3AADA0124036C6600EB187A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E3D0FC7B23FE317600533FDA /* GPOSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPOSApi.swift; sourceTree = "<group>"; };
 		E3D0FC7D23FF463800533FDA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		E3D0FC7F23FF481B00533FDA /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
@@ -65,7 +113,9 @@
 		E3D0FC862401C0E900533FDA /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		E3D0FC882401C84700533FDA /* AppointmentsDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsDialog.swift; sourceTree = "<group>"; };
 		E3D0FC8A2401CA0000533FDA /* RevenueDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueDialog.swift; sourceTree = "<group>"; };
-		E9CA5EA237B5E978E48EE95D /* Pods-worksmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worksmart.release.xcconfig"; path = "Target Support Files/Pods-worksmart/Pods-worksmart.release.xcconfig"; sourceTree = "<group>"; };
+		E3F41405240A03090058D60B /* ViewEventViewControllerPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEventViewControllerPresentation.swift; sourceTree = "<group>"; };
+		E3F414172411E6470058D60B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F414202411E8E90058D60B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66F8A1C91EFD1A5228EAFBEE /* Pods_worksmart.framework in Frameworks */,
+				E3F414242411E9420058D60B /* Alamofire.framework in Frameworks */,
+				D2A3F8E6BA002023C0B83572 /* Pods_worksmart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +134,8 @@
 		0183E9F595E11C057CDE0768 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				29CEB2C822DD62B1264C12CC /* Pods-worksmart.debug.xcconfig */,
-				E9CA5EA237B5E978E48EE95D /* Pods-worksmart.release.xcconfig */,
+				BE700F49B178A61ADCE93E32 /* Pods-worksmart.debug.xcconfig */,
+				A82DB0497FF5835795DAE6D9 /* Pods-worksmart.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -92,9 +143,18 @@
 		E3394E4F23FE08A30071DD9E /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				E3D0FC8A2401CA0000533FDA /* RevenueDialog.swift */,
+				E3D0FC882401C84700533FDA /* AppointmentsDialog.swift */,
+				E3584B1E242058FF00DFCBD2 /* ScratchFile.swift */,
+				E3584B18241C22CF00DFCBD2 /* CustomColor.swift */,
+				E3584B2024205ADE00DFCBD2 /* TapItem.swift */,
 				E3394E4D23FE05380071DD9E /* SignupForm.swift */,
 				E3394E4923FE00480071DD9E /* LoginForm.swift */,
 				E3394E5023FE08CB0071DD9E /* LabelTextField.swift */,
+				E3AAD9FA2401DCBB00EB187A /* EventsCalendarManager.swift */,
+				E3584B16241C1B6500DFCBD2 /* ListItemWithRoundCornerBG.swift */,
+				E3584B1A241E987D00DFCBD2 /* SectionView.swift */,
+				E3584B1C241E9D5B00DFCBD2 /* AppointmentRow.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -102,18 +162,34 @@
 		E3394E5223FE248B0071DD9E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3584B2324205C5A00DFCBD2 /* navigator */,
+				E3584B2224205C1200DFCBD2 /* Prototypes */,
 				E35B4EB923FCD7CF00BE1894 /* LoginView.swift */,
 				E35B4EA923FCD69900BE1894 /* MainScreen.swift */,
-				E3394E4B23FE01D40071DD9E /* LoginRouter.swift */,
 				E3394E4723FDDE890071DD9E /* LoginScreen.swift */,
 				E3394E5323FE277B0071DD9E /* ProfileView.swift */,
 				E3394E5523FE279B0071DD9E /* ScheduleView.swift */,
 				E3394E5723FE27CC0071DD9E /* ReportsView.swift */,
 				E3394E5923FE27F20071DD9E /* NotificationsView.swift */,
-				E3D0FC882401C84700533FDA /* AppointmentsDialog.swift */,
-				E3D0FC8A2401CA0000533FDA /* RevenueDialog.swift */,
+				E3584B14241C178900DFCBD2 /* ProfileViewv2.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E3584B2224205C1200DFCBD2 /* Prototypes */ = {
+			isa = PBXGroup;
+			children = (
+				E3584B122419CD2600DFCBD2 /* BlurView.swift */,
+			);
+			path = Prototypes;
+			sourceTree = "<group>";
+		};
+		E3584B2324205C5A00DFCBD2 /* navigator */ = {
+			isa = PBXGroup;
+			children = (
+				E3394E4B23FE01D40071DD9E /* LoginRouter.swift */,
+			);
+			path = navigator;
 			sourceTree = "<group>";
 		};
 		E35B4E9623FCD69900BE1894 = {
@@ -137,6 +213,7 @@
 		E35B4EA123FCD69900BE1894 /* worksmart */ = {
 			isa = PBXGroup;
 			children = (
+				E3AAD9FC2401DFD600EB187A /* UIKitView */,
 				E3D0FC8123FF523E00533FDA /* ViewModel */,
 				E3D0FC7A23FE30EA00533FDA /* data */,
 				E3D0FC7923FE309E00533FDA /* Network */,
@@ -146,6 +223,7 @@
 				E35B4EA423FCD69900BE1894 /* SceneDelegate.swift */,
 				E35B4EAB23FCD69B00BE1894 /* Assets.xcassets */,
 				E35B4EB023FCD69B00BE1894 /* LaunchScreen.storyboard */,
+				E3AADA0124036C6600EB187A /* MainStoryboard.storyboard */,
 				E35B4EB323FCD69B00BE1894 /* Info.plist */,
 				E35B4EA623FCD69900BE1894 /* worksmart.xcdatamodeld */,
 				E35B4EAD23FCD69B00BE1894 /* Preview Content */,
@@ -159,6 +237,18 @@
 				E35B4EAE23FCD69B00BE1894 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3AAD9FC2401DFD600EB187A /* UIKitView */ = {
+			isa = PBXGroup;
+			children = (
+				E3AAD9FD2401DFF600EB187A /* EventsCalendarView.swift */,
+				E3AAD9FF2401E26F00EB187A /* AddEventViewController.swift */,
+				E3F41405240A03090058D60B /* ViewEventViewControllerPresentation.swift */,
+				E3584B0E2413C80E00DFCBD2 /* ScannerViewController.swift */,
+				E3584B102413C90800DFCBD2 /* ScannerViewPresentation.swift */,
+			);
+			path = UIKitView;
 			sourceTree = "<group>";
 		};
 		E3D0FC7923FE309E00533FDA /* Network */ = {
@@ -191,7 +281,9 @@
 		F13812ECC4E1941F8C25D144 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E89CC183B72D8024F57DC20 /* Pods_worksmart.framework */,
+				E3F414202411E8E90058D60B /* Alamofire.framework */,
+				E3F414172411E6470058D60B /* SwiftyJSON.framework */,
+				771A1F3E1031ADA55C3B1385 /* Pods_worksmart.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,11 +295,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E35B4EB623FCD69B00BE1894 /* Build configuration list for PBXNativeTarget "worksmart" */;
 			buildPhases = (
-				4901CB4641CD829B96C97292 /* [CP] Check Pods Manifest.lock */,
+				AA2205E813A77770F2FC544D /* [CP] Check Pods Manifest.lock */,
 				E35B4E9B23FCD69900BE1894 /* Sources */,
 				E35B4E9C23FCD69900BE1894 /* Frameworks */,
 				E35B4E9D23FCD69900BE1894 /* Resources */,
-				65E808DEB819774E8B895B6C /* [CP] Embed Pods Frameworks */,
+				E3F414112411E58F0058D60B /* Embed Frameworks */,
+				64EEDD29967441404235392B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +351,7 @@
 			files = (
 				E35B4EB223FCD69B00BE1894 /* LaunchScreen.storyboard in Resources */,
 				E35B4EAF23FCD69B00BE1894 /* Preview Assets.xcassets in Resources */,
+				E3AADA0224036C6600EB187A /* MainStoryboard.storyboard in Resources */,
 				E35B4EAC23FCD69B00BE1894 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +359,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4901CB4641CD829B96C97292 /* [CP] Check Pods Manifest.lock */ = {
+		64EEDD29967441404235392B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-worksmart/Pods-worksmart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-worksmart/Pods-worksmart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-worksmart/Pods-worksmart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA2205E813A77770F2FC544D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,23 +398,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		65E808DEB819774E8B895B6C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-worksmart/Pods-worksmart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-worksmart/Pods-worksmart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-worksmart/Pods-worksmart-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -311,24 +405,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3584B2124205ADE00DFCBD2 /* TapItem.swift in Sources */,
 				E3D0FC852401509000533FDA /* WeatherData.swift in Sources */,
+				E3AADA002401E26F00EB187A /* AddEventViewController.swift in Sources */,
+				E3584B1B241E987D00DFCBD2 /* SectionView.swift in Sources */,
 				E35B4EA823FCD69900BE1894 /* worksmart.xcdatamodeld in Sources */,
 				E3D0FC8023FF481B00533FDA /* ApiError.swift in Sources */,
 				E35B4EA323FCD69900BE1894 /* AppDelegate.swift in Sources */,
 				E3394E4E23FE05380071DD9E /* SignupForm.swift in Sources */,
+				E3584B19241C22CF00DFCBD2 /* CustomColor.swift in Sources */,
+				E3AAD9FE2401DFF600EB187A /* EventsCalendarView.swift in Sources */,
 				E3D0FC8323FF525600533FDA /* ProfileVM.swift in Sources */,
+				E3584B1D241E9D5B00DFCBD2 /* AppointmentRow.swift in Sources */,
 				E35B4EAA23FCD69900BE1894 /* MainScreen.swift in Sources */,
 				E3394E5423FE277B0071DD9E /* ProfileView.swift in Sources */,
 				E3394E5623FE279B0071DD9E /* ScheduleView.swift in Sources */,
 				E3D0FC7C23FE317600533FDA /* GPOSApi.swift in Sources */,
 				E3394E5123FE08CB0071DD9E /* LabelTextField.swift in Sources */,
+				E3584B1F242058FF00DFCBD2 /* ScratchFile.swift in Sources */,
 				E3D0FC872401C0E900533FDA /* RowView.swift in Sources */,
+				E3584B17241C1B6500DFCBD2 /* ListItemWithRoundCornerBG.swift in Sources */,
 				E3394E5823FE27CC0071DD9E /* ReportsView.swift in Sources */,
+				E3AAD9FB2401DCBB00EB187A /* EventsCalendarManager.swift in Sources */,
+				E3F41406240A03090058D60B /* ViewEventViewControllerPresentation.swift in Sources */,
+				E3584B112413C90800DFCBD2 /* ScannerViewPresentation.swift in Sources */,
+				E3584B15241C178900DFCBD2 /* ProfileViewv2.swift in Sources */,
+				E3584B132419CD2700DFCBD2 /* BlurView.swift in Sources */,
 				E3D0FC892401C84700533FDA /* AppointmentsDialog.swift in Sources */,
 				E35B4EBA23FCD7CF00BE1894 /* LoginView.swift in Sources */,
 				E3394E4A23FE00480071DD9E /* LoginForm.swift in Sources */,
 				E3D0FC8B2401CA0000533FDA /* RevenueDialog.swift in Sources */,
 				E35B4EA523FCD69900BE1894 /* SceneDelegate.swift in Sources */,
+				E3584B0F2413C80E00DFCBD2 /* ScannerViewController.swift in Sources */,
 				E3D0FC7E23FF463800533FDA /* UserProfile.swift in Sources */,
 				E3394E4C23FE01D40071DD9E /* LoginRouter.swift in Sources */,
 				E3394E4823FDDE890071DD9E /* LoginScreen.swift in Sources */,
@@ -400,13 +508,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -454,21 +563,24 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		E35B4EB723FCD69B00BE1894 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29CEB2C822DD62B1264C12CC /* Pods-worksmart.debug.xcconfig */;
+			baseConfigurationReference = BE700F49B178A61ADCE93E32 /* Pods-worksmart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"worksmart/Preview Content\"";
 				DEVELOPMENT_TEAM = PH6WM5VE5P;
@@ -478,18 +590,20 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gpos.worksmart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gpos.smartwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E35B4EB823FCD69B00BE1894 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9CA5EA237B5E978E48EE95D /* Pods-worksmart.release.xcconfig */;
+			baseConfigurationReference = A82DB0497FF5835795DAE6D9 /* Pods-worksmart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"worksmart/Preview Content\"";
 				DEVELOPMENT_TEAM = PH6WM5VE5P;
@@ -499,10 +613,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gpos.worksmart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gpos.smartwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

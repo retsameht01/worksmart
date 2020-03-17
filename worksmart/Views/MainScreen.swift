@@ -1,10 +1,9 @@
 //
-//  ContentView.swift
-//  worksmart
+//
 //
 //  Created by Tin Le on 2/18/20.
 //  Copyright © 2020 Tin Le. All rights reserved.
-//
+// MainScreen -- the main container view for the app.
 
 import SwiftUI
 
@@ -16,42 +15,25 @@ struct MainScreen: View {
  
     var body: some View {
         TabView(selection: $selection){
-            ProfileView(viewRouter: viewRouter, profileVM: viewModel)
-                .tabItem {
-                    VStack {
-                        Image("first")
-                        Text("Profile")
-                    }
-                }
+            ProfileViewv2()
+                .tabItem { TapItem(imageName: "dashboard", label: "Overview") }
                 .tag(0)
             
             ScheduleView()
-                .tabItem {
-                    VStack {
-                        Image("second")
-                        Text("Schedule")
-                    }
-                }
+                .tabItem { TapItem(imageName: "calendar", label: "Appointments") }
                 .tag(1)
             
             ReportsView()
-            .tabItem {
-                VStack {
-                    Image("first")
-                    Text("Reports")
-                }
-            }
+            .tabItem { TapItem(imageName: "reports", label: "Reports") }
             .tag(2)
             
             NotificationsView()
-            .tabItem {
-                VStack {
-                    Image("second")
-                    Text("Notifications")
-                }
-            }
+            .tabItem { TapItem(imageName: "notifications", label: "Notifications") }
             .tag(3)
-        }
+            
+        }.background(
+        LinearGradient(gradient: Gradient(colors: [CustomColor.cleanBlue, CustomColor.pastelCoral]), startPoint: .top, endPoint: .bottom)
+        .edgesIgnoringSafeArea(.all))
     }
 }
 

@@ -11,8 +11,11 @@ import SwiftUI
 struct ScheduleView: View {
     var body: some View {
         VStack{
+            ScannerViewPresentation()
+            //ViewEventViewControllerPresentation()
+            /*
           Text("Schedule")
-            .font(.title)
+            .font(.title)*/
         }
         
     }
@@ -20,6 +23,6 @@ struct ScheduleView: View {
 
 struct ScheduleView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleView()
+        ScannerViewPresentation()
     }
 }

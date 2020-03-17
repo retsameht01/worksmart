@@ -66,7 +66,8 @@ struct LoginForm: View {
                         .foregroundColor(.white)
                 }
             }
-        }.background(
+        }
+        .background(
         LinearGradient(gradient: Gradient(colors: [.pink, .blue]), startPoint: .top, endPoint: .bottom)
             .edgesIgnoringSafeArea(.all))
             
