@@ -12,7 +12,7 @@ struct LabelTextField: View {
     var label: String
     var placeHolder: String
     
-    @State private var text = ""
+    @Binding var text: String
     
     var body: some View {
         VStack(alignment: .leading){

@@ -27,6 +27,9 @@
 		E3584B1D241E9D5B00DFCBD2 /* AppointmentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B1C241E9D5B00DFCBD2 /* AppointmentRow.swift */; };
 		E3584B1F242058FF00DFCBD2 /* ScratchFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B1E242058FF00DFCBD2 /* ScratchFile.swift */; };
 		E3584B2124205ADE00DFCBD2 /* TapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B2024205ADE00DFCBD2 /* TapItem.swift */; };
+		E3584B2524206A1E00DFCBD2 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B2424206A1E00DFCBD2 /* TransactionRow.swift */; };
+		E3584B2724206B4100DFCBD2 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B2624206B4100DFCBD2 /* Transaction.swift */; };
+		E3584B29242F789B00DFCBD2 /* ReportsOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B28242F789B00DFCBD2 /* ReportsOverview.swift */; };
 		E35B4EA323FCD69900BE1894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA223FCD69900BE1894 /* AppDelegate.swift */; };
 		E35B4EA523FCD69900BE1894 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA423FCD69900BE1894 /* SceneDelegate.swift */; };
 		E35B4EA823FCD69900BE1894 /* worksmart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EA623FCD69900BE1894 /* worksmart.xcdatamodeld */; };
@@ -35,6 +38,7 @@
 		E35B4EAF23FCD69B00BE1894 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35B4EAE23FCD69B00BE1894 /* Preview Assets.xcassets */; };
 		E35B4EB223FCD69B00BE1894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35B4EB023FCD69B00BE1894 /* LaunchScreen.storyboard */; };
 		E35B4EBA23FCD7CF00BE1894 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B4EB923FCD7CF00BE1894 /* LoginView.swift */; };
+		E3A1CE162444EE510085BB8D /* SignupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A1CE152444EE510085BB8D /* SignupVM.swift */; };
 		E3AAD9FB2401DCBB00EB187A /* EventsCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AAD9FA2401DCBB00EB187A /* EventsCalendarManager.swift */; };
 		E3AAD9FE2401DFF600EB187A /* EventsCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AAD9FD2401DFF600EB187A /* EventsCalendarView.swift */; };
 		E3AADA002401E26F00EB187A /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AAD9FF2401E26F00EB187A /* AddEventViewController.swift */; };
@@ -47,6 +51,9 @@
 		E3D0FC872401C0E900533FDA /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC862401C0E900533FDA /* RowView.swift */; };
 		E3D0FC892401C84700533FDA /* AppointmentsDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC882401C84700533FDA /* AppointmentsDialog.swift */; };
 		E3D0FC8B2401CA0000533FDA /* RevenueDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0FC8A2401CA0000533FDA /* RevenueDialog.swift */; };
+		E3D70A6F244DDDBA000F7A25 /* AccountProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D70A6E244DDDBA000F7A25 /* AccountProfile.swift */; };
+		E3D70A71244DDF91000F7A25 /* SignInVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D70A70244DDF91000F7A25 /* SignInVM.swift */; };
+		E3D70A73244DEC67000F7A25 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D70A72244DEC67000F7A25 /* ProfileManager.swift */; };
 		E3F41406240A03090058D60B /* ViewEventViewControllerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F41405240A03090058D60B /* ViewEventViewControllerPresentation.swift */; };
 		E3F4141B2411E6470058D60B /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3F414172411E6470058D60B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E3F414242411E9420058D60B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F414202411E8E90058D60B /* Alamofire.framework */; };
@@ -91,6 +98,9 @@
 		E3584B1C241E9D5B00DFCBD2 /* AppointmentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentRow.swift; sourceTree = "<group>"; };
 		E3584B1E242058FF00DFCBD2 /* ScratchFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchFile.swift; sourceTree = "<group>"; };
 		E3584B2024205ADE00DFCBD2 /* TapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapItem.swift; sourceTree = "<group>"; };
+		E3584B2424206A1E00DFCBD2 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		E3584B2624206B4100DFCBD2 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		E3584B28242F789B00DFCBD2 /* ReportsOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsOverview.swift; sourceTree = "<group>"; };
 		E35B4E9F23FCD69900BE1894 /* worksmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worksmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35B4EA223FCD69900BE1894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35B4EA423FCD69900BE1894 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +111,7 @@
 		E35B4EB123FCD69B00BE1894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35B4EB323FCD69B00BE1894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E35B4EB923FCD7CF00BE1894 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E3A1CE152444EE510085BB8D /* SignupVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVM.swift; sourceTree = "<group>"; };
 		E3AAD9FA2401DCBB00EB187A /* EventsCalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCalendarManager.swift; sourceTree = "<group>"; };
 		E3AAD9FD2401DFF600EB187A /* EventsCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCalendarView.swift; sourceTree = "<group>"; };
 		E3AAD9FF2401E26F00EB187A /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +124,9 @@
 		E3D0FC862401C0E900533FDA /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		E3D0FC882401C84700533FDA /* AppointmentsDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsDialog.swift; sourceTree = "<group>"; };
 		E3D0FC8A2401CA0000533FDA /* RevenueDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueDialog.swift; sourceTree = "<group>"; };
+		E3D70A6E244DDDBA000F7A25 /* AccountProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProfile.swift; sourceTree = "<group>"; };
+		E3D70A70244DDF91000F7A25 /* SignInVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVM.swift; sourceTree = "<group>"; };
+		E3D70A72244DEC67000F7A25 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		E3F41405240A03090058D60B /* ViewEventViewControllerPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEventViewControllerPresentation.swift; sourceTree = "<group>"; };
 		E3F414172411E6470058D60B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F414202411E8E90058D60B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +169,7 @@
 				E3584B16241C1B6500DFCBD2 /* ListItemWithRoundCornerBG.swift */,
 				E3584B1A241E987D00DFCBD2 /* SectionView.swift */,
 				E3584B1C241E9D5B00DFCBD2 /* AppointmentRow.swift */,
+				E3584B2424206A1E00DFCBD2 /* TransactionRow.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -172,6 +187,7 @@
 				E3394E5723FE27CC0071DD9E /* ReportsView.swift */,
 				E3394E5923FE27F20071DD9E /* NotificationsView.swift */,
 				E3584B14241C178900DFCBD2 /* ProfileViewv2.swift */,
+				E3584B28242F789B00DFCBD2 /* ReportsOverview.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,6 +281,9 @@
 				E3D0FC7D23FF463800533FDA /* UserProfile.swift */,
 				E3D0FC7F23FF481B00533FDA /* ApiError.swift */,
 				E3D0FC842401509000533FDA /* WeatherData.swift */,
+				E3584B2624206B4100DFCBD2 /* Transaction.swift */,
+				E3D70A6E244DDDBA000F7A25 /* AccountProfile.swift */,
+				E3D70A72244DEC67000F7A25 /* ProfileManager.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -274,6 +293,8 @@
 			children = (
 				E3D0FC8223FF525600533FDA /* ProfileVM.swift */,
 				E3D0FC862401C0E900533FDA /* RowView.swift */,
+				E3A1CE152444EE510085BB8D /* SignupVM.swift */,
+				E3D70A70244DDF91000F7A25 /* SignInVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -409,12 +430,14 @@
 				E3D0FC852401509000533FDA /* WeatherData.swift in Sources */,
 				E3AADA002401E26F00EB187A /* AddEventViewController.swift in Sources */,
 				E3584B1B241E987D00DFCBD2 /* SectionView.swift in Sources */,
+				E3584B29242F789B00DFCBD2 /* ReportsOverview.swift in Sources */,
 				E35B4EA823FCD69900BE1894 /* worksmart.xcdatamodeld in Sources */,
 				E3D0FC8023FF481B00533FDA /* ApiError.swift in Sources */,
 				E35B4EA323FCD69900BE1894 /* AppDelegate.swift in Sources */,
 				E3394E4E23FE05380071DD9E /* SignupForm.swift in Sources */,
 				E3584B19241C22CF00DFCBD2 /* CustomColor.swift in Sources */,
 				E3AAD9FE2401DFF600EB187A /* EventsCalendarView.swift in Sources */,
+				E3584B2524206A1E00DFCBD2 /* TransactionRow.swift in Sources */,
 				E3D0FC8323FF525600533FDA /* ProfileVM.swift in Sources */,
 				E3584B1D241E9D5B00DFCBD2 /* AppointmentRow.swift in Sources */,
 				E35B4EAA23FCD69900BE1894 /* MainScreen.swift in Sources */,
@@ -429,15 +452,20 @@
 				E3AAD9FB2401DCBB00EB187A /* EventsCalendarManager.swift in Sources */,
 				E3F41406240A03090058D60B /* ViewEventViewControllerPresentation.swift in Sources */,
 				E3584B112413C90800DFCBD2 /* ScannerViewPresentation.swift in Sources */,
+				E3A1CE162444EE510085BB8D /* SignupVM.swift in Sources */,
 				E3584B15241C178900DFCBD2 /* ProfileViewv2.swift in Sources */,
+				E3D70A6F244DDDBA000F7A25 /* AccountProfile.swift in Sources */,
 				E3584B132419CD2700DFCBD2 /* BlurView.swift in Sources */,
 				E3D0FC892401C84700533FDA /* AppointmentsDialog.swift in Sources */,
 				E35B4EBA23FCD7CF00BE1894 /* LoginView.swift in Sources */,
 				E3394E4A23FE00480071DD9E /* LoginForm.swift in Sources */,
+				E3584B2724206B4100DFCBD2 /* Transaction.swift in Sources */,
 				E3D0FC8B2401CA0000533FDA /* RevenueDialog.swift in Sources */,
 				E35B4EA523FCD69900BE1894 /* SceneDelegate.swift in Sources */,
 				E3584B0F2413C80E00DFCBD2 /* ScannerViewController.swift in Sources */,
 				E3D0FC7E23FF463800533FDA /* UserProfile.swift in Sources */,
+				E3D70A73244DEC67000F7A25 /* ProfileManager.swift in Sources */,
+				E3D70A71244DDF91000F7A25 /* SignInVM.swift in Sources */,
 				E3394E4C23FE01D40071DD9E /* LoginRouter.swift in Sources */,
 				E3394E4823FDDE890071DD9E /* LoginScreen.swift in Sources */,
 				E3394E5A23FE27F20071DD9E /* NotificationsView.swift in Sources */,

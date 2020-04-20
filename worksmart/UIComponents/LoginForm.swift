@@ -11,8 +11,11 @@ import SwiftUI
 struct LoginForm: View {
     @ObservedObject var viewRouter: LoginRouter
     
-    @State private var email = ""
+    @State private var username = ""
     @State private var password = ""
+    
+    @ObservedObject var signInVm = SignInVM()
+    
     var body: some View {
         VStack{
             Text("WorkSmart")
@@ -29,7 +32,7 @@ struct LoginForm: View {
                 .padding(.bottom, 50)
             
             VStack(alignment: .leading, spacing: 15) {
-                TextField("Email", text: self.$email)
+                TextField("Email", text: self.$username)
                     .padding()
                     .background(Color.themeTextField)
                     .cornerRadius(10.0)
@@ -44,6 +47,8 @@ struct LoginForm: View {
             
             Button(action: {
                 self.viewRouter.currentPage = "home"
+                self.signInVm.login(username: self.username, password: self.password)
+                
             }) {
                 Text("Sign In")
                     .font(.headline)
@@ -62,13 +67,11 @@ struct LoginForm: View {
                 Button(action: {
                     self.viewRouter.currentPage = "signUp"
                 }) {
-                    Text("Sign Up")
-                        .foregroundColor(.white)
+                    Text("Sign Up").foregroundColor(.white)
                 }
             }
         }
-        .background(
-        LinearGradient(gradient: Gradient(colors: [.pink, .blue]), startPoint: .top, endPoint: .bottom)
+        .background(LinearGradient(gradient: Gradient(colors: [.pink, .blue]), startPoint: .top, endPoint: .bottom)
             .edgesIgnoringSafeArea(.all))
             
         }

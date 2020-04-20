@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ProfileViewv2: View {
     var body: some View {
-        VStack(alignment:.leading) {
+        VStack(alignment: .leading) {
             VStack(alignment: .leading) {
                 Text("Fancy Salon")
                 .font(Font.system(size: 35.0))
