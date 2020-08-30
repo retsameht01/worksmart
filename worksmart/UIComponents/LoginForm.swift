@@ -10,14 +10,13 @@ import SwiftUI
 
 struct LoginForm: View {
     @ObservedObject var viewRouter: LoginRouter
-    
+
     @State private var username = ""
     @State private var password = ""
-    
-    @ObservedObject var signInVm = SignInVM()
+    @ObservedObject var signInVm: SignInVM = SignInVM()
     
     var body: some View {
-        VStack{
+        VStack {
             Text("WorkSmart")
                 .font(.largeTitle).foregroundColor(Color.white)
                 .padding(.vertical, 40)
@@ -32,22 +31,30 @@ struct LoginForm: View {
                 .padding(.bottom, 50)
             
             VStack(alignment: .leading, spacing: 15) {
-                TextField("Email", text: self.$username)
+                TextField("Username", text: self.$username)
                     .padding()
                     .background(Color.themeTextField)
                     .cornerRadius(10.0)
                     .shadow(radius: 10.0, x: 20, y: 10)
+                    .autocapitalization(.none)
                 
                 SecureField("Password", text: self.$password)
                     .padding()
                     .background(Color.themeTextField)
                     .cornerRadius(10.0)
                     .shadow(radius: 10.0, x: 20, y: 10)
+                    .autocapitalization(.none)
+                
             }.padding(.horizontal, 27.5)
             
             Button(action: {
-                self.viewRouter.currentPage = "home"
-                self.signInVm.login(username: self.username, password: self.password)
+                //self.viewRouter.currentPage = "home"
+                self.signInVm.login(username: self.username, password: self.password, completion: { success in
+                  print(" success")
+                  if (success) {
+                      self.viewRouter.currentPage = "home"
+                  }
+                })
                 
             }) {
                 Text("Sign In")
@@ -71,14 +78,25 @@ struct LoginForm: View {
                 }
             }
         }
+        .onAppear(perform: self.doInitialize)
         .background(LinearGradient(gradient: Gradient(colors: [.pink, .blue]), startPoint: .top, endPoint: .bottom)
             .edgesIgnoringSafeArea(.all))
             
-        }
+    }
+    
+    func doInitialize() {
+        signInVm.initialize( completion: { success in
+            print(" success")
+            if (success) {
+                self.viewRouter.currentPage = "home"
+            }
+          })
+    }
 }
 
 
 struct LoginForm_Previews: PreviewProvider {
+    @EnvironmentObject var profileManager: ProfileManager
     static var previews: some View {
         LoginForm(viewRouter: LoginRouter())
     }

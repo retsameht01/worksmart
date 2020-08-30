@@ -14,6 +14,7 @@ struct ProfileView: View {
     @State private var showAppointments = false
     @State private var showRevenue = false
     @State private var showCustomerServed = false
+    @State private var selectedProducts: [Product] = []
     
     var body: some View {
         VStack(alignment:.leading){
@@ -27,60 +28,12 @@ struct ProfileView: View {
                         .foregroundColor(.blue)
                 }
             }
-            
-            Text(getTimeStamp())
-                .font(.subheadline)
-                .italic()
-                .foregroundColor(.black)
-            
-            Text("Fancy Nail")
-                .font(.title)
-                .foregroundColor(CustomColor.niceYellow)
-                .padding(.bottom, 10)
-            
-            Text("Christie Nguyen")
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .padding(.bottom, 20)
-            
-            HStack{
-                RowView(rowLabel: "Revenue", rowData: "$24.99")
-                Button(action:{
-                    self.showRevenue = true
-                }) {
-                    Text("view")
-                }.sheet(isPresented: self.$showRevenue) {
-                  RevenueDialog()
-                }
-            }.padding(.bottom, 20)
-            
-            HStack{
-                RowView(rowLabel: "Customers Served", rowData: "3")
-                Button(action:{
-                    self.showCustomerServed = true
-                }) {
-                    Text("view")
-                }.sheet(isPresented: self.$showCustomerServed) {
-                  AppointmentsDialog()
-                }
-            }.padding(.bottom, 20)
-            
-            HStack{
-                RowView(rowLabel: "Appointments:", rowData: "3")
-                Button(action:{
-                    self.showAppointments = true
-                }) {
-                    Text("view")
-                }.sheet(isPresented: self.$showAppointments) {
-                  AppointmentsDialog()
-                }
-            }
-            
-            //Text(profileVM.weatherInfo)
-            Spacer()
-            Spacer()
-            Spacer()
-        }.onAppear(perform: {self.profileVM.getWeather(city: "Atlanta")})
+            ProductListView(allProducts: profileVM.allProducts, selectedProducts: $selectedProducts)
+            SelectedProductListView(products: $selectedProducts)
+        }.onAppear(perform: {
+            //self.profileVM.getWeather(city: "Atlanta")
+            self.profileVM.getSampleProduct()
+        })
         .padding(20)
         .background(
         LinearGradient(gradient: Gradient(colors: [CustomColor.cleanBlue, CustomColor.pastelCoral]), startPoint: .top, endPoint: .bottom)

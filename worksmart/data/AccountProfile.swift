@@ -9,11 +9,21 @@
 import Foundation
 
 struct AccountProfile: Decodable {
-    let lastName: String
     let firstName: String
-    let userName: String
-    let password: String
+    let lastName: String
+    let username: String
+    let password: String?
     let appName: String
     let token: String
     let refreshToken: String
+    
+    enum CodingKeys: String, CodingKey {
+        case firstName = "firstName"
+        case lastName = "lastName"
+        case username = "username"
+        case password = "password"
+        case appName = "appName"
+        case token = "token"
+        case refreshToken = "refreshToken"
+    }
 }

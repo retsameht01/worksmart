@@ -15,7 +15,7 @@ struct MainScreen: View {
  
     var body: some View {
         TabView(selection: $selection){
-            ProfileViewv2()
+            ProfileView(viewRouter: viewRouter, profileVM: viewModel)
                 .tabItem { TapItem(imageName: "dashboard", label: "Overview") }
                 .tag(0)
             

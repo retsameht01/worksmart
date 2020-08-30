@@ -7,14 +7,29 @@
 //
 
 import Foundation
-struct UserProfile {
+
+struct UserProfile : Decodable {
     let id: String
-    var name: String
-    var email: String
-    var phone: String
-    var birthDate: String
-    var address: String
-    var businessId: String
-    var businessName: String
-    var businessPhone: String
+    let name: String
+    let commissionRate: Float
+    let sales: Double
+    let standardCost: Double
+    let tips: Double
+    let cashCollected: Double
+    let commission: Double
+    let taxableCashPaymentRate: Double
+    let totalWorkHours: Double
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "providerId"
+        case name = "providerName"
+        case commissionRate = "commissionRate"
+        case sales = "sales"
+        case standardCost = "standardCost"
+        case tips = "tips"
+        case cashCollected = "cashCollected"
+        case commission = "commission"
+        case taxableCashPaymentRate = "taxableCashPaymentRate"
+        case totalWorkHours = "totalWorkHours"
+    }
 }

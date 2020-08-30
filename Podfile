@@ -8,4 +8,6 @@ target 'worksmart' do
   # Pods for worksmart
   pod 'Alamofire', '~> 5.0'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'SwiftKeychainWrapper'
+  pod 'netfox'
 end
