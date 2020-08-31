@@ -33,7 +33,7 @@ struct ProductListView: View {
                                 Text("Add")
                                     .foregroundColor(.white)
                                     .background(Color.green)
-                                    .font(.subheadline)
+                                    .font(.body)
                         }.onTapGesture {
                             self.addProduct(item: listProduct.products[0])
                         }

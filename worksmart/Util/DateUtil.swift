@@ -15,4 +15,10 @@ class DateUtil {
         outputFormat.dateFormat = MM_DD_YYYY_FORMAT
         return outputFormat.string(from: Date())
     }
+    
+    static func getFormattedDateString(date: Date) -> String {
+        let outputFormat = DateFormatter()
+        outputFormat.dateFormat = MM_DD_YYYY_FORMAT
+        return outputFormat.string(from: date)
+    }
 }

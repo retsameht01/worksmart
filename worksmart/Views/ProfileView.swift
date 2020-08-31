@@ -32,7 +32,7 @@ struct ProfileView: View {
             SelectedProductListView(products: $selectedProducts)
         }.onAppear(perform: {
             //self.profileVM.getWeather(city: "Atlanta")
-            self.profileVM.getSampleProduct()
+            self.profileVM.loadProducts()
         })
         .padding(20)
         .background(

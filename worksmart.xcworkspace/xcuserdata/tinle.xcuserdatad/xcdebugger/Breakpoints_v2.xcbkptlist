@@ -94,8 +94,8 @@
             filePath = "worksmart/ViewModel/ProfileVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "getWeather(city:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -257,70 +257,6 @@
             startingLineNumber = "57"
             endingLineNumber = "57"
             landmarkName = "initialize(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FF0B7FFD-E4C9-43E2-B4E5-A4F7790DAD55"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "worksmart/ViewModel/ProfileVM.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "getSampleReport()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FF0B7FFD-E4C9-43E2-B4E5-A4F7790DAD55 - d518c98297ac8dfe"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "worksmart.ProfileVM.getSampleReport() -&gt; ()"
-                  moduleName = "worksmart"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tinle/Documents/Projects/gpos_apps/worksmart/worksmart/worksmart/ViewModel/ProfileVM.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "364">
-               </Location>
-               <Location
-                  uuid = "FF0B7FFD-E4C9-43E2-B4E5-A4F7790DAD55 - 8d45d86fdfeda83"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in worksmart.ProfileVM.getSampleReport() -&gt; ()"
-                  moduleName = "worksmart"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tinle/Documents/Projects/gpos_apps/worksmart/worksmart/worksmart/ViewModel/ProfileVM.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "61562E22-6205-4099-A6ED-132DAF50034E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "worksmart/ViewModel/ProfileVM.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "getSampleReport()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -503,22 +439,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BC000915-F61B-488A-AC9C-9126E063B8F7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "worksmart/ViewModel/ProfileVM.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "getSampleProduct()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F21807DE-F418-414F-8A9F-70B14C3A9F81"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -530,54 +450,6 @@
             endingLineNumber = "186"
             landmarkName = "getCatgegories(token:completion:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BEC200B1-8E1E-4AE2-B5A6-67666594506B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "worksmart/ViewModel/ProfileVM.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "getSampleProduct()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BEC200B1-8E1E-4AE2-B5A6-67666594506B - 5a4b148d670b4918"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "worksmart.ProfileVM.getSampleProduct() -&gt; ()"
-                  moduleName = "worksmart"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tinle/Documents/Projects/gpos_apps/worksmart/worksmart/worksmart/ViewModel/ProfileVM.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "364">
-               </Location>
-               <Location
-                  uuid = "BEC200B1-8E1E-4AE2-B5A6-67666594506B - f8084b56abc43d"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in worksmart.ProfileVM.getSampleProduct() -&gt; ()"
-                  moduleName = "worksmart"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tinle/Documents/Projects/gpos_apps/worksmart/worksmart/worksmart/ViewModel/ProfileVM.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -689,6 +561,70 @@
             startingLineNumber = "179"
             endingLineNumber = "179"
             landmarkName = "getCatgegories(token:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "487A7F8D-1408-4D98-B7B6-9D79D1A2E78C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "worksmart/data/StorageManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "readTextFile(fileName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43B6CEAD-7C18-4145-9C07-644B3E4AC8D2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "worksmart/data/StorageManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "saveTextFile(fileName:content:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7E44B4C-4C66-4189-AE59-52C24C461F72"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "worksmart/data/ProductsRepo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "parseCategoryFromJson(json:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "776083E6-7FE7-48D2-932B-FF2DBCB83510"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "worksmart/data/ProductsRepo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "parseCategoryFromJson(json:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

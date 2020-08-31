@@ -11,7 +11,7 @@ import SwiftUI
 import SwiftyJSON
 
 class ProfileVM: ObservableObject {
-    private let gposService = GposService()
+    private let productRepo = ProductsRepo()
     let profileManager: ProfileManager = ProfileManager()
     let didChange = PassthroughSubject<ProfileVM, Never>()
     
@@ -28,6 +28,7 @@ class ProfileVM: ObservableObject {
     }
     
     func getWeather(city: String) {
+        /*
         gposService.getWeather(city: city, completion: {_, weatherJson in
             print("json result")
             if let weatherJson = weatherJson {
@@ -42,21 +43,14 @@ class ProfileVM: ObservableObject {
                 self.weatherInfo = "Unable to parse weather"
             }
         })
+ 
+            */
     }
     
-    func getSampleReport() {
+    func loadProducts() {
         let token = profileManager.getTokens()[AppConstants.userToken] ?? ""
-        gposService.getSaleReport(employeeId: "11", requestToken: token) { result in
-            print("is sale report success? \(result)")
-            self.weatherInfo = "sample report succes? \(result)"
-        }
-    }
-    
-    func getSampleProduct() {
-        let token = profileManager.getTokens()[AppConstants.userToken] ?? ""
-        gposService.getCatgegories(token: token, completion: { isSuccess, data in
-            print("is product list success? \(isSuccess) with \(data.count) categories")
+        productRepo.getProducts(token: token, storeId: "30002") { data in
             self.allProducts = data
-        })
+        }
     }
 }

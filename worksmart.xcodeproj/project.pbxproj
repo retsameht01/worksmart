@@ -44,6 +44,8 @@
 		E376CBE924FC128C00398C97 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBE824FC128C00398C97 /* ProductListView.swift */; };
 		E376CBED24FC1AD300398C97 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBEC24FC1AD300398C97 /* TestData.swift */; };
 		E376CBEF24FC334300398C97 /* SelectedProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBEE24FC334200398C97 /* SelectedProductListView.swift */; };
+		E376CBF124FC731E00398C97 /* ProductsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBF024FC731E00398C97 /* ProductsRepo.swift */; };
+		E376CBF324FC7BF600398C97 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBF224FC7BF600398C97 /* StorageManager.swift */; };
 		E3A1CE162444EE510085BB8D /* SignupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A1CE152444EE510085BB8D /* SignupVM.swift */; };
 		E3AAD9FB2401DCBB00EB187A /* EventsCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AAD9FA2401DCBB00EB187A /* EventsCalendarManager.swift */; };
 		E3AAD9FE2401DFF600EB187A /* EventsCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AAD9FD2401DFF600EB187A /* EventsCalendarView.swift */; };
@@ -127,6 +129,8 @@
 		E376CBE824FC128C00398C97 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		E376CBEC24FC1AD300398C97 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		E376CBEE24FC334200398C97 /* SelectedProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedProductListView.swift; sourceTree = "<group>"; };
+		E376CBF024FC731E00398C97 /* ProductsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepo.swift; sourceTree = "<group>"; };
+		E376CBF224FC7BF600398C97 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		E3A1CE152444EE510085BB8D /* SignupVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVM.swift; sourceTree = "<group>"; };
 		E3AAD9FA2401DCBB00EB187A /* EventsCalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCalendarManager.swift; sourceTree = "<group>"; };
 		E3AAD9FD2401DFF600EB187A /* EventsCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCalendarView.swift; sourceTree = "<group>"; };
@@ -310,6 +314,8 @@
 				E3D70A7B244E1C4A000F7A25 /* SessionManager.swift */,
 				E376CBE624FAD75A00398C97 /* Category.swift */,
 				E376CBEC24FC1AD300398C97 /* TestData.swift */,
+				E376CBF024FC731E00398C97 /* ProductsRepo.swift */,
+				E376CBF224FC7BF600398C97 /* StorageManager.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -481,6 +487,7 @@
 				E3584B2524206A1E00DFCBD2 /* TransactionRow.swift in Sources */,
 				E3D0FC8323FF525600533FDA /* ProfileVM.swift in Sources */,
 				E3584B1D241E9D5B00DFCBD2 /* AppointmentRow.swift in Sources */,
+				E376CBF124FC731E00398C97 /* ProductsRepo.swift in Sources */,
 				E35B4EAA23FCD69900BE1894 /* MainScreen.swift in Sources */,
 				E3394E5423FE277B0071DD9E /* ProfileView.swift in Sources */,
 				E3394E5623FE279B0071DD9E /* ScheduleView.swift in Sources */,
@@ -503,6 +510,7 @@
 				E3584B132419CD2700DFCBD2 /* BlurView.swift in Sources */,
 				E3D0FC892401C84700533FDA /* AppointmentsDialog.swift in Sources */,
 				E35B4EBA23FCD7CF00BE1894 /* LoginView.swift in Sources */,
+				E376CBF324FC7BF600398C97 /* StorageManager.swift in Sources */,
 				E3394E4A23FE00480071DD9E /* LoginForm.swift in Sources */,
 				E3584B2724206B4100DFCBD2 /* Transaction.swift in Sources */,
 				E3D0FC8B2401CA0000533FDA /* RevenueDialog.swift in Sources */,

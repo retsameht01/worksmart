@@ -25,7 +25,7 @@ struct SelectedProductListView: View {
                                 Text("Remove")
                                     .foregroundColor(.white)
                                     .background(Color.red)
-                                    .font(.subheadline)
+                                    .font(.body)
                                 
                         }.onTapGesture {
                             self.removeProduct(index: self.getProductIndex(product: product))
