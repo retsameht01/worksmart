@@ -9,15 +9,18 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @EnvironmentObject var checkoutCart: OrderCart
     @ObservedObject var viewRouter: LoginRouter
     @ObservedObject var profileVM: ProfileVM
+    @Binding var currentTabSelection: Int
     @State private var showAppointments = false
     @State private var showRevenue = false
     @State private var showCustomerServed = false
     @State private var selectedProducts: [Product] = []
     
+    
     var body: some View {
-        VStack(alignment:.leading){
+        VStack(alignment:.center){
             HStack{
                 Spacer()
                 Button(action: {
@@ -29,7 +32,19 @@ struct ProfileView: View {
                 }
             }
             ProductListView(allProducts: profileVM.allProducts, selectedProducts: $selectedProducts)
+            Spacer()
             SelectedProductListView(products: $selectedProducts)
+            Button(action: {
+                self.doCheckout()
+            }){
+                Text("Checkout")
+                .font(.headline)
+                .foregroundColor(.white)
+                .frame(width: 200, height: 50)
+                .background(Color.green)
+                .cornerRadius(5.0)
+            }
+            
         }.onAppear(perform: {
             //self.profileVM.getWeather(city: "Atlanta")
             self.profileVM.loadProducts()
@@ -40,6 +55,11 @@ struct ProfileView: View {
         .edgesIgnoringSafeArea(.all))
     }
     
+    private func doCheckout() {
+        self.checkoutCart.products = selectedProducts
+        self.currentTabSelection = 1
+    }
+    
     func getTimeStamp() -> String{
         let timestamp = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: .medium, timeStyle: .short)
        return timestamp
@@ -47,8 +67,9 @@ struct ProfileView: View {
 }
 
 struct ProfileView_Previews: PreviewProvider {
+    @State private static var selection = 0
     static var previews: some View {
-        ProfileView(viewRouter: LoginRouter(), profileVM: ProfileVM())
+        ProfileView(viewRouter: LoginRouter(), profileVM: ProfileVM(), currentTabSelection: $selection)
     }
 }
 

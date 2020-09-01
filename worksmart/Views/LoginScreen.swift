@@ -10,6 +10,7 @@ import SwiftUI
 
 struct LoginScreen: View {
     @ObservedObject var loginRouter: LoginRouter
+    @EnvironmentObject var checkoutCart: OrderCart
     
     var body: some View {
         VStack {

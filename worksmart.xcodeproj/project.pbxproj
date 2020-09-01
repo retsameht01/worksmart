@@ -46,6 +46,12 @@
 		E376CBEF24FC334300398C97 /* SelectedProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBEE24FC334200398C97 /* SelectedProductListView.swift */; };
 		E376CBF124FC731E00398C97 /* ProductsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBF024FC731E00398C97 /* ProductsRepo.swift */; };
 		E376CBF324FC7BF600398C97 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBF224FC7BF600398C97 /* StorageManager.swift */; };
+		E376CBF524FD63B100398C97 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBF424FD63B100398C97 /* CheckoutView.swift */; };
+		E376CBF724FD6ABD00398C97 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBF624FD6ABD00398C97 /* PrimaryButton.swift */; };
+		E376CBF924FD6E5200398C97 /* CheckoutUserInfoForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBF824FD6E5200398C97 /* CheckoutUserInfoForm.swift */; };
+		E376CBFB24FD6F2000398C97 /* CreditCardInfoForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBFA24FD6F2000398C97 /* CreditCardInfoForm.swift */; };
+		E376CBFD24FDE51B00398C97 /* OrderCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBFC24FDE51B00398C97 /* OrderCart.swift */; };
+		E376CBFF24FDE85E00398C97 /* OrderDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E376CBFE24FDE85E00398C97 /* OrderDetailsView.swift */; };
 		E3A1CE162444EE510085BB8D /* SignupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A1CE152444EE510085BB8D /* SignupVM.swift */; };
 		E3AAD9FB2401DCBB00EB187A /* EventsCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AAD9FA2401DCBB00EB187A /* EventsCalendarManager.swift */; };
 		E3AAD9FE2401DFF600EB187A /* EventsCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AAD9FD2401DFF600EB187A /* EventsCalendarView.swift */; };
@@ -131,6 +137,12 @@
 		E376CBEE24FC334200398C97 /* SelectedProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedProductListView.swift; sourceTree = "<group>"; };
 		E376CBF024FC731E00398C97 /* ProductsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepo.swift; sourceTree = "<group>"; };
 		E376CBF224FC7BF600398C97 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		E376CBF424FD63B100398C97 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		E376CBF624FD6ABD00398C97 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		E376CBF824FD6E5200398C97 /* CheckoutUserInfoForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutUserInfoForm.swift; sourceTree = "<group>"; };
+		E376CBFA24FD6F2000398C97 /* CreditCardInfoForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardInfoForm.swift; sourceTree = "<group>"; };
+		E376CBFC24FDE51B00398C97 /* OrderCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCart.swift; sourceTree = "<group>"; };
+		E376CBFE24FDE85E00398C97 /* OrderDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsView.swift; sourceTree = "<group>"; };
 		E3A1CE152444EE510085BB8D /* SignupVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVM.swift; sourceTree = "<group>"; };
 		E3AAD9FA2401DCBB00EB187A /* EventsCalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCalendarManager.swift; sourceTree = "<group>"; };
 		E3AAD9FD2401DFF600EB187A /* EventsCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCalendarView.swift; sourceTree = "<group>"; };
@@ -196,6 +208,11 @@
 				E3584B2424206A1E00DFCBD2 /* TransactionRow.swift */,
 				E376CBE824FC128C00398C97 /* ProductListView.swift */,
 				E376CBEE24FC334200398C97 /* SelectedProductListView.swift */,
+				E376CBF424FD63B100398C97 /* CheckoutView.swift */,
+				E376CBF624FD6ABD00398C97 /* PrimaryButton.swift */,
+				E376CBF824FD6E5200398C97 /* CheckoutUserInfoForm.swift */,
+				E376CBFA24FD6F2000398C97 /* CreditCardInfoForm.swift */,
+				E376CBFE24FDE85E00398C97 /* OrderDetailsView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -316,6 +333,7 @@
 				E376CBEC24FC1AD300398C97 /* TestData.swift */,
 				E376CBF024FC731E00398C97 /* ProductsRepo.swift */,
 				E376CBF224FC7BF600398C97 /* StorageManager.swift */,
+				E376CBFC24FDE51B00398C97 /* OrderCart.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -471,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3584B2124205ADE00DFCBD2 /* TapItem.swift in Sources */,
+				E376CBFF24FDE85E00398C97 /* OrderDetailsView.swift in Sources */,
 				E3D0FC852401509000533FDA /* WeatherData.swift in Sources */,
 				E3AADA002401E26F00EB187A /* AddEventViewController.swift in Sources */,
 				E3584B1B241E987D00DFCBD2 /* SectionView.swift in Sources */,
@@ -486,6 +505,8 @@
 				E3AAD9FE2401DFF600EB187A /* EventsCalendarView.swift in Sources */,
 				E3584B2524206A1E00DFCBD2 /* TransactionRow.swift in Sources */,
 				E3D0FC8323FF525600533FDA /* ProfileVM.swift in Sources */,
+				E376CBFD24FDE51B00398C97 /* OrderCart.swift in Sources */,
+				E376CBF924FD6E5200398C97 /* CheckoutUserInfoForm.swift in Sources */,
 				E3584B1D241E9D5B00DFCBD2 /* AppointmentRow.swift in Sources */,
 				E376CBF124FC731E00398C97 /* ProductsRepo.swift in Sources */,
 				E35B4EAA23FCD69900BE1894 /* MainScreen.swift in Sources */,
@@ -498,6 +519,7 @@
 				E3584B1F242058FF00DFCBD2 /* ScratchFile.swift in Sources */,
 				E3D0FC872401C0E900533FDA /* RowView.swift in Sources */,
 				E3584B17241C1B6500DFCBD2 /* ListItemWithRoundCornerBG.swift in Sources */,
+				E376CBFB24FD6F2000398C97 /* CreditCardInfoForm.swift in Sources */,
 				E3394E5823FE27CC0071DD9E /* ReportsView.swift in Sources */,
 				E3AAD9FB2401DCBB00EB187A /* EventsCalendarManager.swift in Sources */,
 				E3F41406240A03090058D60B /* ViewEventViewControllerPresentation.swift in Sources */,
@@ -508,6 +530,7 @@
 				E3D70A6F244DDDBA000F7A25 /* AccountProfile.swift in Sources */,
 				E3D70A7C244E1C4A000F7A25 /* SessionManager.swift in Sources */,
 				E3584B132419CD2700DFCBD2 /* BlurView.swift in Sources */,
+				E376CBF524FD63B100398C97 /* CheckoutView.swift in Sources */,
 				E3D0FC892401C84700533FDA /* AppointmentsDialog.swift in Sources */,
 				E35B4EBA23FCD7CF00BE1894 /* LoginView.swift in Sources */,
 				E376CBF324FC7BF600398C97 /* StorageManager.swift in Sources */,
@@ -523,6 +546,7 @@
 				E3D70A71244DDF91000F7A25 /* SignInVM.swift in Sources */,
 				E3394E4C23FE01D40071DD9E /* LoginRouter.swift in Sources */,
 				E376CBE924FC128C00398C97 /* ProductListView.swift in Sources */,
+				E376CBF724FD6ABD00398C97 /* PrimaryButton.swift in Sources */,
 				E3394E4823FDDE890071DD9E /* LoginScreen.swift in Sources */,
 				E3394E5A23FE27F20071DD9E /* NotificationsView.swift in Sources */,
 			);

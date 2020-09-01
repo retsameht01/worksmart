@@ -49,7 +49,7 @@ class StorageManager {
         let today = Date()
         let diffComponents = Calendar.current.dateComponents([.day], from: createdDate, to: today)
         
-        print("it has been \(String(describing: diffComponents.day)) since file was created on \(DateUtil.getFormattedDateString(date: createdDate))")
+        print("it has been \(String(describing: diffComponents.day!)) days since file was created on \(DateUtil.getFormattedDateString(date: createdDate))")
         return createdDate
     }
 }

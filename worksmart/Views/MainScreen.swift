@@ -15,14 +15,15 @@ struct MainScreen: View {
  
     var body: some View {
         TabView(selection: $selection){
-            ProfileView(viewRouter: viewRouter, profileVM: viewModel)
+            ProfileView(viewRouter: viewRouter, profileVM: viewModel, currentTabSelection: $selection)
                 .tabItem { TapItem(imageName: "dashboard", label: "Overview") }
                 .tag(0)
             
-            ScheduleView()
-                .tabItem { TapItem(imageName: "calendar", label: "Appointments") }
+            CheckoutView()
+                .tabItem { TapItem(imageName: "shopping", label: "Checkout") }
                 .tag(1)
             
+            /*
             ReportsView()
             .tabItem { TapItem(imageName: "reports", label: "Reports") }
             .tag(2)
@@ -30,6 +31,7 @@ struct MainScreen: View {
             NotificationsView()
             .tabItem { TapItem(imageName: "notifications", label: "Notifications") }
             .tag(3)
+ */
             
         }.background(
         LinearGradient(gradient: Gradient(colors: [CustomColor.cleanBlue, CustomColor.pastelCoral]), startPoint: .top, endPoint: .bottom)
