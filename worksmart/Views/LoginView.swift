@@ -16,7 +16,7 @@ struct LoginView: View {
         NavigationView {
             VStack(alignment: .leading, spacing: 15) {
                 Spacer()
-                Text("Worksmart Login")
+                Text(AppConstants.LOGIN_TITLE)
                     .font(.largeTitle).foregroundColor(Color.blue)
                     .padding(.vertical, 40)
                 
@@ -30,7 +30,7 @@ struct LoginView: View {
                 
                 NavigationLink(destination: MainScreen(viewRouter: LoginRouter())){
                     VStack{
-                        Text("Login")
+                        Text(AppConstants.LOGIN_BTN_TEXT)
                             .font(.headline)
                             .foregroundColor(.white)
                         .padding()

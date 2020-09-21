@@ -9,9 +9,10 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @ObservedObject var profileVM: ProfileVM = ProfileVM()
     @EnvironmentObject var checkoutCart: OrderCart
+    @EnvironmentObject var settingsManager: SettingsManager
     @ObservedObject var viewRouter: LoginRouter
-    @ObservedObject var profileVM: ProfileVM
     @Binding var currentTabSelection: Int
     @State private var showAppointments = false
     @State private var showRevenue = false
@@ -23,6 +24,7 @@ struct ProfileView: View {
         VStack(alignment:.center){
             HStack{
                 Spacer()
+                Text("\(settingsManager.businessName)")
                 Button(action: {
                     self.viewRouter.currentPage = "login"
                 }){
@@ -46,8 +48,7 @@ struct ProfileView: View {
             }
             
         }.onAppear(perform: {
-            //self.profileVM.getWeather(city: "Atlanta")
-            self.profileVM.loadProducts()
+            self.profileVM.loadProducts(storeId: self.settingsManager.businessId)
         })
         .padding(20)
         .background(
@@ -69,7 +70,7 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     @State private static var selection = 0
     static var previews: some View {
-        ProfileView(viewRouter: LoginRouter(), profileVM: ProfileVM(), currentTabSelection: $selection)
+        ProfileView(viewRouter: LoginRouter() , currentTabSelection: $selection)
     }
 }
 

@@ -10,20 +10,18 @@ import SwiftUI
 struct MainScreen: View {
     @State private var selection = 0
     @ObservedObject var viewRouter: LoginRouter
-    //TODO refactor this to be injected. view should not care about instantiating Vm
-    @ObservedObject var viewModel: ProfileVM = ProfileVM()
- 
     var body: some View {
         TabView(selection: $selection){
-            ProfileView(viewRouter: viewRouter, profileVM: viewModel, currentTabSelection: $selection)
-                .tabItem { TapItem(imageName: "dashboard", label: "Overview") }
+            ProfileView(viewRouter: viewRouter, currentTabSelection: $selection)
+                .tabItem { TapItem(imageName: "shopping_tab_icon", label: AppConstants.ORDER_TAB_LABEL) }
                 .tag(0)
             
             CheckoutView()
-                .tabItem { TapItem(imageName: "shopping", label: "Checkout") }
+                .tabItem { TapItem(imageName: "payment_tab_icon", label: AppConstants.CHECKOUT_TAB_LABEL) }
                 .tag(1)
             
             /*
+             TODO replace these with more meaniningful tabs (order history perhaps)
             ReportsView()
             .tabItem { TapItem(imageName: "reports", label: "Reports") }
             .tag(2)
@@ -31,7 +29,7 @@ struct MainScreen: View {
             NotificationsView()
             .tabItem { TapItem(imageName: "notifications", label: "Notifications") }
             .tag(3)
- */
+             */
             
         }.background(
         LinearGradient(gradient: Gradient(colors: [CustomColor.cleanBlue, CustomColor.pastelCoral]), startPoint: .top, endPoint: .bottom)

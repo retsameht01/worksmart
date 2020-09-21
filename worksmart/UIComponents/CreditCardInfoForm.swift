@@ -19,14 +19,13 @@ struct CreditCardInfoForm: View {
             Text("Credit Card Info")
             LabelTextField(label:"Card #", placeHolder:"", text: self.$cardNumber)
             LabelTextField(label:"CVV", placeHolder:"", text: self.$cvv)
-            LabelTextField(label:"Expiration Month", placeHolder:"", text: self.$expMonth)
-            LabelTextField(label:"Expiration Year", placeHolder:"", text: self.$expYear)
+            HStack {
+                LabelTextField(label:"Exp Month", placeHolder:"", text: self.$expMonth)
+                LabelTextField(label:"Exp Year", placeHolder:"", text: self.$expYear)
+            }
+            
         }
     }//End of View
-    
-    func submitOrder() {
-        
-    }
 }
 
 struct CreditCardInfoForm_Previews: PreviewProvider {

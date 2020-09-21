@@ -26,10 +26,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
         let profileManager = ProfileManager()
         let orderCart = OrderCart()
+        let settingsMgr = SettingsManager()
         let contentView = LoginScreen(loginRouter: LoginRouter())
             .environment(\.managedObjectContext, context)
             .environmentObject(profileManager)
             .environmentObject(orderCart)
+            .environmentObject(settingsMgr)
         
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

@@ -17,7 +17,7 @@ struct LoginForm: View {
     
     var body: some View {
         VStack {
-            Text("WorkSmart")
+            Text(AppConstants.LOGIN_TITLE)
                 .font(.largeTitle).foregroundColor(Color.white)
                 .padding(.vertical, 40)
                 .shadow(radius: 10.0, x: 20, y: 10)
@@ -48,16 +48,15 @@ struct LoginForm: View {
             }.padding(.horizontal, 27.5)
             
             Button(action: {
-                //self.viewRouter.currentPage = "home"
                 self.signInVm.login(username: self.username, password: self.password, completion: { success in
-                  print(" success")
+                  print("Login success")
                   if (success) {
                       self.viewRouter.currentPage = "home"
                   }
                 })
                 
             }) {
-                Text("Sign In")
+                Text(AppConstants.SIGN_IN_LABEL)
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()
@@ -69,12 +68,14 @@ struct LoginForm: View {
             
             Spacer()
             HStack(spacing: 0) {
-                Text("Don't have an account? ")
+                Text("Don't have an account?")
                     .foregroundColor(.white)
+                    .padding(.horizontal, 10)
+                
                 Button(action: {
                     self.viewRouter.currentPage = "signUp"
                 }) {
-                    Text("Sign Up").foregroundColor(.white)
+                    Text(AppConstants.SIGN_UP_LABEL).foregroundColor(.white)
                 }
             }
         }

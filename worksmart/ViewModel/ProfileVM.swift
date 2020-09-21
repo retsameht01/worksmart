@@ -12,17 +12,17 @@ import SwiftyJSON
 
 class ProfileVM: ObservableObject {
     private let productRepo = ProductsRepo()
+    @Published var allProducts: [Category] = [Category]() {
+        didSet {
+            didChange.send(self)
+        }
+    }
+        
     let profileManager: ProfileManager = ProfileManager()
     let didChange = PassthroughSubject<ProfileVM, Never>()
     
     @Published var weatherInfo: String = "loading weather..." {
         didSet {
-            didChange.send(self)
-        }
-    }
-    
-    @Published var allProducts: [Category] = [] {
-        didSet{
             didChange.send(self)
         }
     }
@@ -47,9 +47,20 @@ class ProfileVM: ObservableObject {
             */
     }
     
-    func loadProducts() {
+    func loadProducts(storeId: String) {
+        loadProductsNew(storeId: storeId)
+        
+        /*
         let token = profileManager.getTokens()[AppConstants.userToken] ?? ""
-        productRepo.getProducts(token: token, storeId: "30002") { data in
+        productRepo.getProductsV2(token: token, storeId: storeId) { data in
+            self.allProducts = data
+        }
+         */
+    }
+    
+    private func loadProductsNew(storeId: String) {
+        let token = profileManager.getTokens()[AppConstants.userToken] ?? ""
+        productRepo.getProductsV2(token: token, storeId: storeId) { success, data in
             self.allProducts = data
         }
     }

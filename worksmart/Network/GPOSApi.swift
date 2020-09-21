@@ -64,7 +64,7 @@ class GposService {
             "Content-Type": "application/json"
         ]
         
-        AF.request(ApiConstants.GPOS_API_REGISTER, method: .post,
+        AF.request(ApiConstants.GPOS_API_REGISTER_NEW, method: .post,
                    parameters: postParams,
                    encoding:JSONEncoding.default ,
                    headers: headers)
@@ -101,7 +101,7 @@ class GposService {
             "Content-Type": "application/json"
         ]
         
-        AF.request(ApiConstants.GPOS_API_LOGIN, method: .post,
+        AF.request(ApiConstants.GPOS_API_LOGIN_NEW, method: .post,
                    parameters: postParams,
                    encoding:JSONEncoding.default ,
                    headers: headers)
@@ -163,7 +163,7 @@ class GposService {
         }
     }
     
-    func getCatgegories(token: String, completion: @escaping (_ success: Bool, _ data: [Category]) -> Void) {
+    func getCatgegories(token: String, storeId: String, completion: @escaping (_ success: Bool, _ data: [Category]) -> Void) {
         
         let bearerToken = "Bearer \(token)"
         let headers: HTTPHeaders = [
@@ -171,7 +171,9 @@ class GposService {
             "Content-Type": "application/json"
         ]
         
-        AF.request(ApiConstants.GPOS_API_RESTAURANT_TEST_GET_PRODUCT_CATEGORIES,
+        let url = String(format: ApiConstants.GPOS_API_BASE_API, storeId)
+        
+        AF.request(url,
                    method: .get,
                    encoding: JSONEncoding.default,
                    headers: headers)
@@ -214,26 +216,6 @@ class GposService {
         }
     }
     
-    private struct ApiConstants {
-        static let WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather?"
-        static let CITY_KEY = "q"
-        static let APP_ID_KEY = "appid"
-        static let GPOS_API_REGISTER = "https://gposwebapi.azurewebsites.net/users/register"
-        static let GPOS_API_LOGIN = "https://gposwebapi.azurewebsites.net/users/authenticate"
-        static let GPOS_API_NEW = "https://api.gposdev.com"
-        static let GPOS_GETPROVIDER_INFO = "https://gposwebapi.azurewebsites.net/20002/api/providers/%%?start=1/1/2020&end=3/1/2020"
-        
-        //OLD API
-        static let USERNAME = "admin"
-        static let PASSWORD = "6786716888"
-        static let RESTAURANT_TEST_API = "30002"
-        static let SALON_TEST_API = "30002"
-        static let GPOS_API_CORE_BASE = "https://www.gposdev.com/"
-        static let GPOS_API_RESTAURANT_TEST_GET_PRODUCT_CATEGORIES = "https://api.gposdev.com/30001/api/Categories"
-        
-        //use https://www.gposdev.com/30002/Help
-        
-    }
 }
 
 

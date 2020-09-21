@@ -10,7 +10,9 @@ import SwiftUI
 
 struct CheckoutView: View {
     @EnvironmentObject var checkoutCart: OrderCart
-    @State var checkoutPage = "userInfo"
+    
+    private var checkoutVM: CheckoutViewModel = CheckoutViewModel()
+    @State var checkoutSubView = "userInfo"
     
     @State var firstName: String = ""
     @State var lastName: String = ""
@@ -18,11 +20,17 @@ struct CheckoutView: View {
     @State var phone: String = ""
     @State var business: String = ""
     @State var password: String = ""
+    @State var address: String = ""
+    @State var city: String = ""
+    @State var zip: String = ""
+    @State var state: String = ""
     //Credit card data
     @State var cardNumber: String = ""
     @State var cvv: String = ""
     @State var expYear: String = ""
     @State var expMonth: String = ""
+    
+    @State var orderPaymentResult: String = ""
     
     var order: [Product] = []
     var body: some View {
@@ -32,12 +40,27 @@ struct CheckoutView: View {
             .foregroundColor(.green)
             .padding(.bottom, 10)
             
-            if (checkoutPage == "userInfo") {
+            if (checkoutSubView != "orderDetails") {
+                Button(action: {
+                    self.doAutofill()
+                }){
+                    Text("Autofill")
+                    .font(.headline)
+                    .foregroundColor(.blue)
+                }
+            }
+            
+            if (checkoutSubView == "userInfo") {
                 CheckoutUserInfoForm(
                 firstName: $firstName,
                 lastName: $lastName,
-                email: $lastName,
-                phone: $phone)
+                email: $email,
+                phone: $phone,
+                address: $address,
+                city: $city,
+                zip: $zip,
+                state: $state
+                )
                 Button(action: {
                     self.goToCardInfo()
                 }){
@@ -48,10 +71,10 @@ struct CheckoutView: View {
                     .background(Color.green)
                     .cornerRadius(5.0)
                 }
-            } else if (checkoutPage == "creditInfo") {
+            } else if (checkoutSubView == "creditInfo") {
                 HStack{
                     Button(action: {
-                        self.checkoutPage = "userInfo"
+                        self.checkoutSubView = "userInfo"
                     }){
                         Text("Back")
                     }
@@ -72,11 +95,13 @@ struct CheckoutView: View {
                     .cornerRadius(5.0)
                 }
             }
-            else if (checkoutPage == "orderDetails") {
-                OrderDetailsView(checkoutPage: $checkoutPage)
+            else if (checkoutSubView == "orderDetails") {
+                OrderDetailsView(checkoutPage: $checkoutSubView)
+            } else if (checkoutSubView == "orderComplete") {
+                OrderComplete(orderPaymentResult: self.orderPaymentResult)
             }
             
-            if (checkoutPage != "orderDetails") {
+            if (checkoutSubView != "orderDetails") {
                 HStack{
                     Text("Order total: \(checkoutCart.getTotal())")
                     Button(action:{
@@ -92,14 +117,49 @@ struct CheckoutView: View {
         
     }//End of View
     func showOrderDetails() {
-        self.checkoutPage = "orderDetails"
+        self.checkoutSubView = "orderDetails"
     }
     
     func goToCardInfo() {
-        self.checkoutPage = "creditInfo"
+        self.checkoutSubView = "creditInfo"
+    }
+    
+    func doAutofill() {
+        self.firstName = "Peter"
+        self.lastName = "Smith"
+        self.email = "test@email.com"
+        self.phone = "7703456789"
+        self.address = "123 5th Avenue"
+        self.city = "Atlanta"
+        self.state = "GA"
+        self.zip = "30093"
+        self.cardNumber = "5424000000000015"
+        self.cvv = "999"
+        self.expYear = "2022"
+        self.expMonth = "01"
     }
     
     func submitOrder() {
+        let userInfo = UserInfo(firstName: self.firstName,
+                                lastName: self.lastName,
+                                company: "",
+                                address: self.address,
+                                city: self.city,
+                                state: self.state,
+                                zip: self.zip,
+                                country: AppConstants.DEFAULT_COUNTRY_CODE)
+        
+        let expirationDate = self.expYear + "-" + self.expMonth
+        
+        let creditCardInfo = CreditCard(cardNumber: self.cardNumber, expirationDate: expirationDate , cardCode: self.cvv)
+        checkoutVM.makePayment(billingInfo: userInfo,
+                               creditCard: creditCardInfo,
+                               order: checkoutCart.products) { result in
+                                
+                                self.orderPaymentResult = result
+                                self.checkoutSubView = "orderComplete"
+                                
+                                }
         
     }
 }
