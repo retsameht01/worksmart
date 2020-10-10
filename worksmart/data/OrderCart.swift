@@ -11,10 +11,14 @@ class OrderCart: ObservableObject {
     @Published var products: [Product] = []
     
     func getTotal() -> String {
-        var total: Float = 0
+        var total: Double = 0
         for product in products {
             total += product.price
         }
         return Product.getFormattedPrice(value: total)
+    }
+    
+    func clear() {
+        self.products = []
     }
 }

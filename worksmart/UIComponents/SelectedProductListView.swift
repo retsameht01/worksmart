@@ -52,7 +52,7 @@ struct SelectedProductListView: View {
     }
     
     func getTotal() -> String {
-        var total: Float = 0
+        var total: Double = 0
         for product in products {
             total += product.price
         }

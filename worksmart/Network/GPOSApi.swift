@@ -171,7 +171,7 @@ class GposService {
             "Content-Type": "application/json"
         ]
         
-        let url = String(format: ApiConstants.GPOS_API_BASE_API, storeId)
+        let url = String(format: ApiConstants.GPOS_API_BASE_API, storeId, "Categories")
         
         AF.request(url,
                    method: .get,

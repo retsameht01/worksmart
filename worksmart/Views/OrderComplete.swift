@@ -11,6 +11,7 @@ import SwiftUI
 struct OrderComplete: View {
     var orderPaymentResult: String = ""
     @EnvironmentObject var checkoutCart: OrderCart
+    @Binding var checkoutCurrentView: String
     var body: some View {
         VStack{
             Text("Order Completed")
@@ -19,13 +20,27 @@ struct OrderComplete: View {
             Text("Order Total: \(checkoutCart.getTotal())")
             Text("Payment Result: \(orderPaymentResult)")
             Spacer()
+            Button(action: {
+                self.doneBtnClick()
+            }){
+                Text("Done")
+                .font(.headline)
+                .foregroundColor(.blue)
+            }
         }
         
+    }
+    
+    func doneBtnClick() {
+        //Need to handle storing order info with order # returned by GPOS service.
+        checkoutCurrentView = "userInfo"
+        checkoutCart.clear()
     }
 }
 
 struct OrderComplete_Previews: PreviewProvider {
+    @State static var stringCurrentView = "test"
     static var previews: some View {
-        OrderComplete(orderPaymentResult: "Result success")
+        OrderComplete(orderPaymentResult: "Result success", checkoutCurrentView: $stringCurrentView)
     }
 }

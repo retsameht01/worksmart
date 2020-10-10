@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct ProductListView: View {
     var allProducts: [Category] = []
@@ -48,6 +49,15 @@ struct ProductListView: View {
         print("adding product")
         selectedProducts.append(item)
     }
+    
+    /*
+    func getImageView(urlPath: String) -> some View {
+        guard let url = URL(string: urlPath) else {
+            return EmptyView().self
+        }
+        return URLImage(url).body
+    } */
+    
 }
 
 struct ProductListView_Previews: PreviewProvider {

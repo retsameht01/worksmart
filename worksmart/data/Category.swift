@@ -49,10 +49,10 @@ struct Product: Codable, Identifiable {
     let name: String
     let active: Bool
     let sku: String
-    let standardCost: Float
-    let price: Float
+    let standardCost: Double
+    let price: Double
     let saleTaxGroupId: Int
-    let saleTaxRate:Float
+    let saleTaxRate:Int
     let imageUri: String
     let showOnApp: Bool
     let details: String?
@@ -71,8 +71,31 @@ struct Product: Codable, Identifiable {
         case details = "details"
     }
     
-    static func getFormattedPrice(value: Float)-> String {
+    static func getFormattedPrice(value: Double)-> String {
         return String(format:"$%.2f", value)
+    }
+    
+    /*
+     
+     SubtotalBeforeTax = Quantity * UnitPrice;
+     SaleTax = Math.Round(UnitPrice * Quantity * (SaleTaxRate / 100), 2, MidpointRounding.AwayFromZero);
+     GrandTotal = SubtotalBeforeTax + SaleTax + Tip;
+     */
+    
+    
+    func getTaxAmount() -> Double {
+        let total = price * Double(saleTaxRate / 100)
+        return AppUtil.formatDouble(input: total)
+    }
+    
+    func getUnitPrice(qty: Int) -> Double {
+        let amt = Double(qty) * price
+        return AppUtil.formatDouble(input: amt)
+    }
+    
+    func getUnitPricePlusTax() -> Double {
+        let amt =  getUnitPrice(qty: 1) + getTaxAmount()
+        return AppUtil.formatDouble(input: amt)
     }
 }
 

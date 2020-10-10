@@ -10,6 +10,8 @@ import Foundation
 class DateUtil {
     static let MM_DD_YYYY_FORMAT = "MM/dd/yyyy"
     
+    static let UTC_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss"
+    
     static func getTodayDate() -> String {
         let outputFormat = DateFormatter()
         outputFormat.dateFormat = MM_DD_YYYY_FORMAT
@@ -21,4 +23,12 @@ class DateUtil {
         outputFormat.dateFormat = MM_DD_YYYY_FORMAT
         return outputFormat.string(from: date)
     }
+    
+    static func getCurrentUTCDateString() -> String {
+        let outputFormat = DateFormatter()
+        outputFormat.dateFormat = UTC_DATE_FORMAT
+        return outputFormat.string(from: Date())
+    }
+    
+    
 }

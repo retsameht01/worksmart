@@ -19,6 +19,8 @@
 		E3394E5A23FE27F20071DD9E /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3394E5923FE27F20071DD9E /* NotificationsView.swift */; };
 		E348FF7B2517E0E40099CA45 /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E348FF7A2517E0E40099CA45 /* AppUtil.swift */; };
 		E348FF7D2518307E0099CA45 /* OrderComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = E348FF7C2518307E0099CA45 /* OrderComplete.swift */; };
+		E348FF7F2520CDBF0099CA45 /* SalesOrderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E348FF7E2520CDBF0099CA45 /* SalesOrderProvider.swift */; };
+		E348FF812520D14A0099CA45 /* SalesOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E348FF802520D14A0099CA45 /* SalesOrder.swift */; };
 		E3584B0F2413C80E00DFCBD2 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B0E2413C80E00DFCBD2 /* ScannerViewController.swift */; };
 		E3584B112413C90800DFCBD2 /* ScannerViewPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B102413C90800DFCBD2 /* ScannerViewPresentation.swift */; };
 		E3584B132419CD2700DFCBD2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3584B122419CD2600DFCBD2 /* BlurView.swift */; };
@@ -120,6 +122,8 @@
 		E3394E5923FE27F20071DD9E /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		E348FF7A2517E0E40099CA45 /* AppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
 		E348FF7C2518307E0099CA45 /* OrderComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderComplete.swift; sourceTree = "<group>"; };
+		E348FF7E2520CDBF0099CA45 /* SalesOrderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesOrderProvider.swift; sourceTree = "<group>"; };
+		E348FF802520D14A0099CA45 /* SalesOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesOrder.swift; sourceTree = "<group>"; };
 		E3584B0E2413C80E00DFCBD2 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		E3584B102413C90800DFCBD2 /* ScannerViewPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewPresentation.swift; sourceTree = "<group>"; };
 		E3584B122419CD2600DFCBD2 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -346,6 +350,7 @@
 				E376CC0A2506684800398C97 /* ProductsApiResponse.swift */,
 				E376CC0C25066B4200398C97 /* ApiConstants.swift */,
 				E376CC10250E53B400398C97 /* CheckoutService.swift */,
+				E348FF7E2520CDBF0099CA45 /* SalesOrderProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 				E376CC002505B5C200398C97 /* SettingsManager.swift */,
 				E376CC0E250E4FCE00398C97 /* PaymentTransaction.swift */,
 				E376CC12250E545700398C97 /* PaymentResponse.swift */,
+				E348FF802520D14A0099CA45 /* SalesOrder.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -526,6 +532,7 @@
 			files = (
 				E3584B2124205ADE00DFCBD2 /* TapItem.swift in Sources */,
 				E376CBFF24FDE85E00398C97 /* OrderDetailsView.swift in Sources */,
+				E348FF7F2520CDBF0099CA45 /* SalesOrderProvider.swift in Sources */,
 				E3D0FC852401509000533FDA /* WeatherData.swift in Sources */,
 				E3AADA002401E26F00EB187A /* AddEventViewController.swift in Sources */,
 				E3584B1B241E987D00DFCBD2 /* SectionView.swift in Sources */,
@@ -541,6 +548,7 @@
 				E3D70A76244DF1AA000F7A25 /* KeychainAccessibility.swift in Sources */,
 				E348FF7B2517E0E40099CA45 /* AppUtil.swift in Sources */,
 				E3AAD9FE2401DFF600EB187A /* EventsCalendarView.swift in Sources */,
+				E348FF812520D14A0099CA45 /* SalesOrder.swift in Sources */,
 				E3584B2524206A1E00DFCBD2 /* TransactionRow.swift in Sources */,
 				E3D0FC8323FF525600533FDA /* ProfileVM.swift in Sources */,
 				E376CBFD24FDE51B00398C97 /* OrderCart.swift in Sources */,

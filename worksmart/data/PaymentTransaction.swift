@@ -75,7 +75,7 @@ extension MerchantAuthentication {
 // MARK: - TransactionRequest
 struct TransactionRequest: Codable {
     let transactionType, amount: String
-    let payment: Payment
+    let payment: SalePayment
     let lineItems: LineItems
     let tax, duty, shipping: OtherCharge
     let poNumber: String
@@ -219,11 +219,11 @@ extension LineItem {
 }
 
 // MARK: - Payment
-struct Payment: Codable {
+struct SalePayment: Codable {
     let creditCard: CreditCard
 }
 
-extension Payment {
+extension SalePayment {
     func toJson() -> String {
         
         return AppUtil.toJson(kvp:[

@@ -10,8 +10,10 @@ import SwiftUI
 
 struct CheckoutView: View {
     @EnvironmentObject var checkoutCart: OrderCart
+    @EnvironmentObject var settingsMgr: SettingsManager
+    @Binding var currentTabSelection: Int
     
-    private var checkoutVM: CheckoutViewModel = CheckoutViewModel()
+    var checkoutVM: CheckoutViewModel = CheckoutViewModel()
     @State var checkoutSubView = "userInfo"
     
     @State var firstName: String = ""
@@ -98,7 +100,7 @@ struct CheckoutView: View {
             else if (checkoutSubView == "orderDetails") {
                 OrderDetailsView(checkoutPage: $checkoutSubView)
             } else if (checkoutSubView == "orderComplete") {
-                OrderComplete(orderPaymentResult: self.orderPaymentResult)
+                OrderComplete(orderPaymentResult: self.orderPaymentResult, checkoutCurrentView: $checkoutSubView)
             }
             
             if (checkoutSubView != "orderDetails") {
@@ -152,20 +154,21 @@ struct CheckoutView: View {
         let expirationDate = self.expYear + "-" + self.expMonth
         
         let creditCardInfo = CreditCard(cardNumber: self.cardNumber, expirationDate: expirationDate , cardCode: self.cvv)
-        checkoutVM.makePayment(billingInfo: userInfo,
+        checkoutVM.makePayment(storeId: self.settingsMgr.businessId, billingInfo: userInfo,
                                creditCard: creditCardInfo,
                                order: checkoutCart.products) { result in
                                 
                                 self.orderPaymentResult = result
                                 self.checkoutSubView = "orderComplete"
                                 
-                                }
+                        }
         
     }
 }
 
 struct CheckoutView_Previews: PreviewProvider {
+    @State static var blah = 1
     static var previews: some View {
-        CheckoutView()
+        CheckoutView(currentTabSelection: $blah)
     }
 }

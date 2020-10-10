@@ -21,4 +21,18 @@ class AppUtil {
         json += "}"
         return json
     }
+    
+    static func truncateString(rawString: String, offset: Int) -> String {
+        if(rawString.count <= offset) {
+            return rawString
+        }
+        
+        let truncationRange = rawString.index(rawString.startIndex, offsetBy: offset)
+        let truncatedSubString = rawString[truncationRange]
+        return String(truncatedSubString)
+    }
+    
+    static func formatDouble(input: Double) -> Double {
+        return Double(String(format:"%.2f", input)) ??  input
+    }
 }

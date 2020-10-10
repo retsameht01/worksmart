@@ -17,7 +17,7 @@ protocol ProductsProvider {
 extension ProductsProvider {
     func getProducts(token: String, storeId: String) -> AnyPublisher<[Category], APIError> {
         let bearerToken = "Bearer \(token)"
-        let url = String(format: ApiConstants.GPOS_API_BASE_API, storeId)
+        let url = String(format: ApiConstants.GPOS_API_BASE_API, storeId, "Categories")
         
         var request: URLRequest = URLRequest(url: URL(string: url)!)
         request.addValue(bearerToken, forHTTPHeaderField: "Authorization")

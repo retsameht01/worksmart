@@ -26,7 +26,7 @@ struct ApiConstants {
     //New api url
     
     static let GPOS_API_RESTAURANT_TEST_GET_PRODUCT_CATEGORIES = "https://api.gposdev.com/30001/api/Categories"
-    static let GPOS_API_BASE_API = "https://api.gposdev.com/%@/api/Categories"
+    static let GPOS_API_BASE_API = "https://api.gposdev.com/%@/api/%@"
     static let GPOS_API_LOGIN_NEW  = "https://api.gposdev.com/Users/authenticate"
     static let GPOS_API_REGISTER_NEW = "https://api.gposdev.com/Users/register"
     static let GPOS_API_REFRESH_TOKEN = "https://api.gposdev.com/Users/refreshToken"

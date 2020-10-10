@@ -10,4 +10,5 @@ target 'worksmart' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'SwiftKeychainWrapper'
   pod 'netfox'
+  pod 'URLImage'
 end

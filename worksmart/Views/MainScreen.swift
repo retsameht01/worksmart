@@ -16,7 +16,7 @@ struct MainScreen: View {
                 .tabItem { TapItem(imageName: "shopping_tab_icon", label: AppConstants.ORDER_TAB_LABEL) }
                 .tag(0)
             
-            CheckoutView()
+            CheckoutView(currentTabSelection: $selection)
                 .tabItem { TapItem(imageName: "payment_tab_icon", label: AppConstants.CHECKOUT_TAB_LABEL) }
                 .tag(1)
             
